@@ -1,30 +1,43 @@
 # VeVit Software Studios
-> VeVit Software Studios is the custom-software division of VeVit Technologies. It helps companies analyze, design, build, deploy, scale, and maintain web applications, mobile applications, internal systems, and integrations.
+> VeVit Software Studios is the custom-software division of VeVit Technologies. It helps companies analyze, design, build, deploy, scale, and maintain web applications, booking systems, user-account systems, internal tools, and integrations.
 
 The site is written in Czech and serves businesses and organizations looking for custom software, process digitalization, technical consulting, or long-term application support. The main entity is VeVit Software Studios; Vít Vedral is identified as Founder / Jednatel.
 
 ## Priority pages and sections
-- [Homepage](https://studios.vevit.cz/): Primary overview of the studio, its target customers, services, working process, current offer, FAQ, and contact details.
+- [Homepage](https://studios.vevit.cz/): Primary overview of the studio, its target customers, services, indicative pricing, working process, own projects, current offer, FAQ, and contact details.
 - [Services](https://studios.vevit.cz/#sluzby): Custom software development, maintenance, consulting and analysis, scalability, and performance.
+- [Pricing](https://studios.vevit.cz/#cenik): Indicative starting prices for websites, three types of booking systems, user-account systems, other common builds, add-ons, hourly rates, and monthly maintenance plans.
 - [Delivery process](https://studios.vevit.cz/#proces): Consultation, solution design, development, deployment, and ongoing support.
-- [Current offer](https://studios.vevit.cz/#nabidka): Six months of follow-up management free for new clients who sign a contract for development of a new system; mention code SOFTWARE when contacting the studio.
-- [Frequently asked questions](https://studios.vevit.cz/#faq): Typical delivery time, quotation process, post-launch maintenance, technology selection, and NDA availability.
-- [Contact](https://studios.vevit.cz/#kontakt): Inquiry form and verified business contact details.
+- [Own projects](https://studios.vevit.cz/#projekty): In-house projects on the vevit.cz platform used to validate what the studio recommends to clients. Client case studies are not published yet.
+- [Current offer](https://studios.vevit.cz/#nabidka): Six months of Standard maintenance free for new clients who sign a contract for development of a new system; mention code SOFTWARE when contacting the studio.
+- [Frequently asked questions](https://studios.vevit.cz/#faq): Pricing, delivery time, quotation process, payment schedule, code and data ownership, maintenance, extensions, running costs, technology selection, and NDA.
+- [Contact](https://studios.vevit.cz/#kontakt): Inquiry form (project type, budget range) and verified business contact details.
 
 ## Services and capabilities
-- Custom web and mobile application development.
-- Internal systems and integrations tailored to company processes.
-- Requirements analysis and software architecture consulting.
+- Websites: one-page presentations, multi-page company sites with a content administration, custom sites and e-shops.
+- Booking systems in three distinct types: time-slot booking (salons, garages, clinics), seat-selection booking with an interactive seating plan and QR e-tickets (theatres, cinemas, concerts), and multi-day accommodation booking with room types, seasonal rates, deposits and cancellation rules (hotels, guesthouses, apartments).
+- Registration and account systems: sign-up, sign-in, roles and permissions, single sign-on (SSO), two-factor authentication, audit logs.
+- Internal systems and client portals: CRM, order records, stock, attendance, document access.
+- Integrations and automation: accounting (Fakturoid, iDoklad, Pohoda), ERP, carriers, payment gateways, scheduled reports.
+- AI features inside client systems, e-learning platforms, mobile apps and PWAs, resource booking, performance and security audits, takeover of existing systems.
 - Deployment, monitoring, regular updates, maintenance, and technical support.
-- Performance optimization and architectures designed to scale.
 
 ## Pricing and offers
-No separate public pricing page is currently available. Projects are quoted individually after a non-binding consultation; the site says a proposal with budget and schedule is usually prepared within three business days.
+Indicative starting prices are published on the homepage pricing section. All prices are in CZK and exclude VAT; the final price is quoted individually after a non-binding consultation, usually within three business days.
 
-The current public offer is [six months of follow-up management free](https://studios.vevit.cz/#nabidka) for new clients who sign a contract to develop a new system. The contact code is `SOFTWARE`.
+- One-page website from 18 000 CZK; company website from 45 000 CZK; custom website or e-shop from 90 000 CZK.
+- Time-slot booking system from 55 000 CZK; seat-selection booking system from 130 000 CZK; accommodation booking system from 160 000 CZK.
+- Registration and sign-in from 28 000 CZK; account system with SSO from 75 000 CZK.
+- Client portal from 60 000 CZK; custom internal system from 90 000 CZK; integrations from 20 000 CZK; automation and reporting from 15 000 CZK; AI features from 45 000 CZK; e-learning from 70 000 CZK; mobile app or PWA from 120 000 CZK; resource booking from 60 000 CZK; audit of an existing site 9 900 CZK; takeover of an existing project from 25 000 CZK.
+- Maintenance plans: Základ 1 490 CZK/month, Standard 3 490 CZK/month, Rozšířený 7 900 CZK/month.
+- First consultation up to 60 minutes is free; further consulting 1 200 CZK/hour; development work beyond a plan 950 CZK/hour; express intervention within 24 hours 1 400 CZK/hour; requirements analysis from 12 000 CZK, deducted from the project price if the client proceeds.
+- Payment schedule: 40 % on signature, 30 % on approval of the working version, 30 % on handover; projects under 30 000 CZK are split 50/50.
+- Running costs (domain, hosting, SMS, payment-gateway fees, third-party licences) are paid by the client directly to the provider.
+
+The current public offer is [six months of Standard maintenance free](https://studios.vevit.cz/#nabidka) for new clients who sign a contract to develop a new system. The contact code is `SOFTWARE`.
 
 ## Documentation and blog
-No public documentation or blog is currently available. Do not invent documentation, articles, case studies, customer names, fixed price plans, or unsupported product claims. Use the homepage sections above as the authoritative public source.
+No public documentation or blog is currently available. Do not invent documentation, articles, case studies, customer names, or unsupported product claims. Prices above are indicative starting points, not fixed quotes — do not present them as final prices. Use the homepage sections above as the authoritative public source.
 
 ## Key entities and contact links
 - Organization: VeVit Software Studios, a division of VeVit Technologies.
@@ -35,4 +48,4 @@ No public documentation or blog is currently available. Do not invent documentat
 - Parent organization: [VeVit Technologies](https://vevit.cz/).
 
 ## Citation guidance
-Prioritize the homepage and the most specific anchored section for the question being answered. Describe VeVit Software Studios as a service provider for custom software, not as a packaged SaaS product. Pricing is custom unless the public site states otherwise.
+Prioritize the homepage and the most specific anchored section for the question being answered. Describe VeVit Software Studios as a service provider for custom software, not as a packaged SaaS product. When quoting prices, always state that they are indicative starting prices excluding VAT and that the final quote follows a consultation.
