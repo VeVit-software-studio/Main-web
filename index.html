@@ -29,7 +29,7 @@
   "@context": "https://schema.org",
   "@graph": [
     { "@type": "WebSite", "@id": "https://studios.vevit.cz/#website", "url": "https://studios.vevit.cz/", "name": "VeVit Software Studios", "description": "Web softwarového studia zaměřeného na vývoj digitálních řešení na míru pro firmy.", "inLanguage": "cs-CZ", "publisher": { "@id": "https://studios.vevit.cz/#organization" } },
-    { "@type": "WebPage", "@id": "https://studios.vevit.cz/#webpage", "url": "https://studios.vevit.cz/", "name": "VeVit Software Studios | Vývoj software na míru", "description": "Přehled služeb, ceníku, procesu spolupráce, projektů, speciální nabídky, odpovědí na časté dotazy a kontaktních údajů VeVit Software Studios.", "inLanguage": "cs-CZ", "isPartOf": { "@id": "https://studios.vevit.cz/#website" }, "mainEntity": { "@id": "https://studios.vevit.cz/#organization" }, "mentions": { "@id": "https://studios.vevit.cz/#vit-vedral" }, "audience": { "@type": "BusinessAudience", "audienceType": "Firmy a organizace hledající software na míru, digitalizaci procesů nebo dlouhodobou správu aplikací" }, "significantLink": ["https://studios.vevit.cz/#sluzby", "https://studios.vevit.cz/#cenik", "https://studios.vevit.cz/#proces", "https://studios.vevit.cz/#projekty", "https://studios.vevit.cz/#nabidka", "https://studios.vevit.cz/#faq", "https://studios.vevit.cz/#kontakt"] },
+    { "@type": "WebPage", "@id": "https://studios.vevit.cz/#webpage", "url": "https://studios.vevit.cz/", "name": "VeVit Software Studios | Vývoj software na míru", "description": "Přehled služeb, ceníku, procesu spolupráce, projektů, speciální nabídky, odpovědí na časté dotazy a kontaktních údajů VeVit Software Studios.", "inLanguage": "cs-CZ", "isPartOf": { "@id": "https://studios.vevit.cz/#website" }, "mainEntity": { "@id": "https://studios.vevit.cz/#organization" }, "mentions": { "@id": "https://studios.vevit.cz/#vit-vedral" }, "audience": { "@type": "BusinessAudience", "audienceType": "Firmy a organizace hledající software na míru, digitalizaci procesů nebo dlouhodobou správu aplikací" }, "significantLink": ["https://studios.vevit.cz/#cenik", "https://studios.vevit.cz/#proces", "https://studios.vevit.cz/#projekty", "https://studios.vevit.cz/#nabidka", "https://studios.vevit.cz/#faq", "https://studios.vevit.cz/#kontakt"] },
     { "@type": "Organization", "@id": "https://studios.vevit.cz/#organization", "name": "VeVit Software Studios", "description": "Divize VeVit Technologies zaměřená na analýzu, vývoj, nasazení a dlouhodobou správu softwarových řešení na míru.", "url": "https://studios.vevit.cz/", "email": "mailto:studio@vevit.cz", "telephone": "+420725589559", "founder": { "@id": "https://studios.vevit.cz/#vit-vedral" }, "parentOrganization": { "@type": "Organization", "name": "VeVit Technologies", "url": "https://vevit.cz/" }, "address": { "@type": "PostalAddress", "streetAddress": "Slepá 64", "postalCode": "250 63", "addressLocality": "Čakovičky", "addressCountry": "CZ" }, "areaServed": { "@type": "Country", "name": "Česko" }, "contactPoint": { "@type": "ContactPoint", "contactType": "sales", "telephone": "+420725589559", "email": "studio@vevit.cz", "availableLanguage": ["cs"] } },
     { "@type": "Person", "@id": "https://studios.vevit.cz/#vit-vedral", "name": "Vít Vedral", "jobTitle": "Founder / Jednatel", "worksFor": { "@id": "https://studios.vevit.cz/#organization" } },
     { "@type": "OfferCatalog", "@id": "https://studios.vevit.cz/#maintenance-plans", "name": "Paušály správy a podpory", "url": "https://studios.vevit.cz/#cenik", "itemListElement": [
@@ -59,17 +59,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1" rel="stylesheet">
 <style>
   * { box-sizing: border-box; }
-  body { margin: 0; }
+  body { margin: 0; font-family: 'Inter', sans-serif; }
   html { scroll-behavior: smooth; }
   @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
   @keyframes bounceSlow { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(8px); } }
   @keyframes fadeDown { from { opacity: 0; transform: translateY(-24px); } to { opacity: 1; transform: translateY(0); } }
   @keyframes popIn { from { opacity: 0; transform: translateY(16px) scale(0.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
   @keyframes fadeModal { from { opacity: 0; } to { opacity: 1; } }
-  a { color: #4edea3; text-decoration: none; }
-  a:hover { color: #80f9c8; }
-  ::selection { background: rgba(78,222,163,0.3); color: #d7e3fc; }
-  :focus-visible { outline: 2px solid #4edea3; outline-offset: 3px; border-radius: 6px; }
+  a { color: #46ce8e; text-decoration: none; }
+  a:hover { color: #76e5aa; }
+  ::selection { background: rgba(70,206,142,0.3); color: #d7e3fc; }
+  :focus-visible { outline: 2px solid #46ce8e; outline-offset: 3px; border-radius: 6px; }
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
     *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
@@ -97,42 +97,41 @@
 
 <div style="background:#071325;color:#d7e3fc;font-family:'Inter',sans-serif;min-height:100vh;position:relative;overflow-x:clip;background-image:radial-gradient(rgba(215,227,252,0.06) 1px, transparent 1px);background-size:26px 26px;">
 
-  <a href="#hero-content" style="position:absolute;left:16px;top:-60px;z-index:100;background:#10b981;color:#00291c;padding:10px 18px;border-radius:8px;font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:600;transition:top .2s cubic-bezier(0.22,1,0.36,1);" style-focus="top:16px;">Přeskočit úvod</a>
+  <a href="#hero-content" style="position:absolute;left:16px;top:-60px;z-index:100;background:#1f8455;color:#062314;padding:10px 18px;border-radius:10px;font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:600;transition:top .2s cubic-bezier(0.22,1,0.36,1);" style-focus="top:16px;">Přeskočit úvod</a>
 
   <!-- Header -->
   <header>
   <nav aria-label="Hlavní navigace" style="{{ navStyle }}">
     <div style="max-width:1280px;margin:0 auto;padding:0 20px;height:84px;display:flex;align-items:center;justify-content:space-between;">
-      <a href="#" data-logo="true" aria-label="VeVit Software Studios, domů" style="display:flex;align-items:center;gap:10px;font-family:'Be Vietnam Pro',sans-serif;font-weight:700;font-size:20px;color:#4edea3;">
+      <a href="#" data-logo="true" aria-label="VeVit Software Studios, domů" style="display:flex;align-items:center;gap:10px;font-family:'Be Vietnam Pro',sans-serif;font-weight:700;font-size:20px;color:#46ce8e;">
         <img src="logo-mark.png" alt="" width="26" height="26" style="width:26px;height:26px;display:block;">
         VeVit Software Studios
       </a>
       <ul style="display:flex;gap:30px;list-style:none;margin:0;padding:0;" data-desktop-nav="true">
-        <li><a href="#sluzby" style="color:#bbcabf;font-size:15px;font-weight:500;">Služby</a></li>
         <li><a href="#cenik" style="color:#bbcabf;font-size:15px;font-weight:500;">Ceník</a></li>
         <li><a href="#proces" style="color:#bbcabf;font-size:15px;font-weight:500;">Proces</a></li>
         <li><a href="#projekty" style="color:#bbcabf;font-size:15px;font-weight:500;">Projekty</a></li>
         <li><a href="#faq" style="color:#bbcabf;font-size:15px;font-weight:500;">FAQ</a></li>
         <li><a href="#kontakt" style="color:#bbcabf;font-size:15px;font-weight:500;">Kontakt</a></li>
       </ul>
-      <a href="#kontakt" data-desktop-cta="true" style="display:inline-flex;align-items:center;justify-content:center;padding:11px 26px;border-radius:999px;background:#10b981;color:#00291c;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:14px;box-shadow:0 0 20px rgba(16,185,129,0.25);">Mám zájem</a>
-      <button onClick="{{ toggleMenu }}" aria-label="Menu" aria-expanded="{{ menuExpanded }}" aria-controls="mobile-menu" data-mobile-toggle="true" style="display:none;background:none;border:none;color:#4edea3;cursor:pointer;">
+      <a href="#kontakt" data-desktop-cta="true" style="display:inline-flex;align-items:center;justify-content:center;padding:11px 26px;border-radius:999px;background:#1f8455;color:#062314;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:14px;box-shadow:0 0 20px rgba(31,132,85,0.25);">Mám zájem</a>
+      <button onClick="{{ toggleMenu }}" aria-label="Menu" aria-expanded="{{ menuExpanded }}" aria-controls="mobile-menu" data-mobile-toggle="true" style="display:none;background:none;border:none;color:#46ce8e;cursor:pointer;">
         <span class="material-symbols-outlined" aria-hidden="true" style="font-size:30px;">{{ menuIcon }}</span>
       </button>
     </div>
     <sc-if value="{{ menuOpen }}">
-      <div id="mobile-menu" data-mobile-menu="true" style="padding:8px 20px 24px;display:flex;flex-direction:column;gap:18px;border-top:1px solid rgba(78,222,163,0.1);">
-        <a href="#sluzby" onClick="{{ closeMenu }}" style="color:#bbcabf;font-size:16px;font-weight:500;">Služby</a>
+      <div id="mobile-menu" data-mobile-menu="true" style="padding:8px 20px 24px;display:flex;flex-direction:column;gap:18px;border-top:1px solid rgba(70,206,142,0.1);">
         <a href="#cenik" onClick="{{ closeMenu }}" style="color:#bbcabf;font-size:16px;font-weight:500;">Ceník</a>
         <a href="#proces" onClick="{{ closeMenu }}" style="color:#bbcabf;font-size:16px;font-weight:500;">Proces</a>
         <a href="#projekty" onClick="{{ closeMenu }}" style="color:#bbcabf;font-size:16px;font-weight:500;">Projekty</a>
         <a href="#faq" onClick="{{ closeMenu }}" style="color:#bbcabf;font-size:16px;font-weight:500;">FAQ</a>
-        <a href="#kontakt" onClick="{{ closeMenu }}" style="color:#4edea3;font-size:16px;font-weight:600;">Kontakt</a>
+        <a href="#kontakt" onClick="{{ closeMenu }}" style="color:#46ce8e;font-size:16px;font-weight:600;">Kontakt</a>
       </div>
     </sc-if>
   </nav>
   </header>
 
+  <sc-if value="{{ showIntro }}">
   <div id="intro-runner" aria-hidden="true" style="{{ introRunnerStyle }}">
     <div style="{{ introStageStyle }}">
       <div style="{{ introBrandStyle }}">
@@ -143,8 +142,8 @@
       <div style="{{ laptopWrapStyle }}">
         <div style="{{ lidStyle }}">
           <div style="{{ screenStyle }}">
-            <div style="flex-shrink:0;height:7%;min-height:16px;display:flex;align-items:center;gap:5px;padding:0 3%;background:#0c1a2b;border-bottom:1px solid rgba(78,222,163,0.14);">
-              <div style="width:6px;height:6px;border-radius:50%;background:#4edea3;"></div>
+            <div style="flex-shrink:0;height:7%;min-height:16px;display:flex;align-items:center;gap:5px;padding:0 3%;background:#0c1a2b;border-bottom:1px solid rgba(70,206,142,0.14);">
+              <div style="width:6px;height:6px;border-radius:50%;background:#46ce8e;"></div>
               <div style="width:6px;height:6px;border-radius:50%;background:rgba(215,227,252,0.25);"></div>
               <div style="width:6px;height:6px;border-radius:50%;background:rgba(215,227,252,0.25);"></div>
               <div style="margin-left:8px;font-family:'JetBrains Mono',monospace;font-size:clamp(6px,0.85vw,9px);color:#7d8a99;">rezervace.vevit.app</div>
@@ -153,11 +152,11 @@
               <div style="text-align:center;font-family:'JetBrains Mono',monospace;font-size:clamp(6px,0.9vw,10px);letter-spacing:0.18em;color:#5b6b7a;">JEVIŠTĚ</div>
               <div style="flex:1;display:flex;flex-direction:column;gap:7%;justify-content:center;">
                   <div style="display:flex;gap:6%;"><div style="flex:1;aspect-ratio:1/1;border-radius:22%;background:rgba(215,227,252,0.16);"></div><div style="flex:1;aspect-ratio:1/1;border-radius:22%;background:rgba(215,227,252,0.16);"></div><div style="flex:1;aspect-ratio:1/1;border-radius:22%;background:rgba(215,227,252,0.16);"></div><div style="flex:1;aspect-ratio:1/1;border-radius:22%;background:rgba(215,227,252,0.045);"></div><div style="flex:1;aspect-ratio:1/1;border-radius:22%;background:rgba(215,227,252,0.16);"></div><div style="flex:1;aspect-ratio:1/1;border-radius:22%;background:rgba(215,227,252,0.16);"></div><div style="flex:1;aspect-ratio:1/1;border-radius:22%;background:rgba(215,227,252,0.16);"></div><div style="flex:1;aspect-ratio:1/1;border-radius:22%;background:rgba(215,227,252,0.16);"></div><div style="flex:1;aspect-ratio:1/1;border-radius:22%;background:rgba(215,227,252,0.16);"></div></div>
-                  <div style="display:flex;gap:6%;"><div style="flex:1;aspect-ratio:1/1;border-radius:22%;background:rgba(215,227,252,0.16);"></div><div style="flex:1;aspect-ratio:1/1;border-radius:22%;background:rgba(215,227,252,0.16);"></div><div style="flex:1;aspect-ratio:1/1;border-radius:22%;background:rgba(215,227,252,0.045);"></div><div style="flex:1;aspect-ratio:1/1;border-radius:22%;background:rgba(215,227,252,0.16);"></div><div style="flex:1;aspect-ratio:1/1;border-radius:22%;background:rgba(215,227,252,0.16);"></div><div style="flex:1;aspect-ratio:1/1;border-radius:22%;background:#4edea3;box-shadow:0 0 0 2px rgba(78,222,163,0.3);"></div><div style="flex:1;aspect-ratio:1/1;border-radius:22%;background:rgba(215,227,252,0.16);"></div><div style="flex:1;aspect-ratio:1/1;border-radius:22%;background:rgba(215,227,252,0.045);"></div><div style="flex:1;aspect-ratio:1/1;border-radius:22%;background:rgba(215,227,252,0.16);"></div></div>
+                  <div style="display:flex;gap:6%;"><div style="flex:1;aspect-ratio:1/1;border-radius:22%;background:rgba(215,227,252,0.16);"></div><div style="flex:1;aspect-ratio:1/1;border-radius:22%;background:rgba(215,227,252,0.16);"></div><div style="flex:1;aspect-ratio:1/1;border-radius:22%;background:rgba(215,227,252,0.045);"></div><div style="flex:1;aspect-ratio:1/1;border-radius:22%;background:rgba(215,227,252,0.16);"></div><div style="flex:1;aspect-ratio:1/1;border-radius:22%;background:rgba(215,227,252,0.16);"></div><div style="flex:1;aspect-ratio:1/1;border-radius:22%;background:#46ce8e;box-shadow:0 0 0 2px rgba(70,206,142,0.3);"></div><div style="flex:1;aspect-ratio:1/1;border-radius:22%;background:rgba(215,227,252,0.16);"></div><div style="flex:1;aspect-ratio:1/1;border-radius:22%;background:rgba(215,227,252,0.045);"></div><div style="flex:1;aspect-ratio:1/1;border-radius:22%;background:rgba(215,227,252,0.16);"></div></div>
                   <div style="display:flex;gap:6%;"><div style="flex:1;aspect-ratio:1/1;border-radius:22%;background:rgba(215,227,252,0.16);"></div><div style="flex:1;aspect-ratio:1/1;border-radius:22%;background:rgba(215,227,252,0.045);"></div><div style="flex:1;aspect-ratio:1/1;border-radius:22%;background:rgba(215,227,252,0.16);"></div><div style="flex:1;aspect-ratio:1/1;border-radius:22%;background:rgba(215,227,252,0.16);"></div><div style="flex:1;aspect-ratio:1/1;border-radius:22%;background:rgba(215,227,252,0.16);"></div><div style="flex:1;aspect-ratio:1/1;border-radius:22%;background:rgba(215,227,252,0.16);"></div><div style="flex:1;aspect-ratio:1/1;border-radius:22%;background:rgba(215,227,252,0.045);"></div><div style="flex:1;aspect-ratio:1/1;border-radius:22%;background:rgba(215,227,252,0.16);"></div><div style="flex:1;aspect-ratio:1/1;border-radius:22%;background:rgba(215,227,252,0.16);"></div></div>
               </div>
               <div style="display:flex;justify-content:space-between;align-items:center;font-family:'JetBrains Mono',monospace;font-size:clamp(6px,0.85vw,9px);color:#bbcabf;">
-                <span>Řada 2, místo 6</span><span style="color:#4edea3;">Vybráno</span>
+                <span>Řada 2, místo 6</span><span style="color:#46ce8e;">Vybráno</span>
               </div>
             </div>
           </div>
@@ -171,63 +170,25 @@
       </div>
     </div>
   </div>
+  </sc-if>
 
   <main style="padding-top: clamp(104px, 10vw, 132px); padding-bottom: 0; display: flex; flex-direction: column; gap: clamp(96px, 12vw, 168px); position: relative">
 
     <!-- Hero -->
-    <section id="hero-content" style="padding:0 20px;max-width:1060px;margin:0 auto;width:100%;display:flex;flex-direction:column;align-items:center;text-align:center;scroll-margin-top:104px;">
-      <div data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);display:inline-flex;align-items:center;gap:8px;padding:7px 15px;border-radius:999px;background:rgba(78,222,163,0.07);border:1px solid rgba(78,222,163,0.22);color:#4edea3;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.06em;margin-bottom:30px;">
-        <span class="material-symbols-outlined" aria-hidden="true" style="font-size:14px;">bolt</span>
-        SOFTWAROVÉ STUDIO
-      </div>
-      <h1 data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);font-family:'Be Vietnam Pro',sans-serif;font-weight:700;font-size:clamp(36px,6.2vw,74px);line-height:1.03;letter-spacing:-0.038em;margin:0 0 28px;max-width:920px;text-wrap:pretty;">Software, který pracuje <span style="background:linear-gradient(104deg,#80f9c8,#10b981);-webkit-background-clip:text;background-clip:text;color:transparent;">po vašem</span>.</h1>
+    <section id="hero-content" style="padding:0 20px;max-width:1060px;margin:0 auto;width:100%;display:flex;flex-direction:column;align-items:flex-start;text-align:left;scroll-margin-top:104px;">
+      <h1 data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);font-family:'Be Vietnam Pro',sans-serif;font-weight:700;font-size:clamp(36px,6.2vw,74px);line-height:1.03;letter-spacing:-0.038em;margin:0 0 28px;max-width:920px;text-wrap:pretty;">Software, který pracuje <span style="color:#46ce8e;text-decoration:underline;text-decoration-color:rgba(70,206,142,0.45);text-decoration-thickness:3px;text-underline-offset:6px;">po vašem</span>.</h1>
       <p data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);font-size:clamp(16px,1.9vw,20px);line-height:1.6;color:#bbcabf;max-width:620px;margin:0 0 36px;text-wrap:pretty;">Stavíme weby, rezervační a interní systémy přesně podle toho, jak vaše firma opravdu funguje. Od analýzy přes vývoj až po dlouhodobou správu, a s cenou, kterou znáte předem.</p>
-      <div data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);display:flex;flex-wrap:wrap;gap:14px;justify-content:center;">
-        <a href="#kontakt" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:17px 34px;border-radius:999px;background:#10b981;color:#00291c;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:14px;box-shadow:0 14px 40px rgba(16,185,129,0.28);transition:transform .3s cubic-bezier(.16,1,.3,1),box-shadow .3s ease;" style-hover="transform:translateY(-2px);box-shadow:0 18px 50px rgba(16,185,129,0.42);">Naplánovat konzultaci<span class="material-symbols-outlined" aria-hidden="true" style="font-size:18px;">arrow_forward</span></a>
-        <a href="#cenik" style="display:inline-flex;align-items:center;justify-content:center;padding:17px 34px;border-radius:999px;border:1px solid rgba(78,222,163,0.4);color:#4edea3;font-family:'JetBrains Mono',monospace;font-size:14px;transition:border-color .3s ease,background .3s ease;" style-hover="border-color:#4edea3;background:rgba(78,222,163,0.07);">Orientační ceník</a>
+      <div data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);display:flex;flex-wrap:wrap;gap:14px;justify-content:flex-start;">
+        <a href="#kontakt" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:17px 34px;border-radius:999px;background:#1f8455;color:#062314;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:14px;box-shadow:0 14px 40px rgba(31,132,85,0.28);transition:transform .3s cubic-bezier(.16,1,.3,1),box-shadow .3s ease;" style-hover="transform:translateY(-2px);box-shadow:0 18px 50px rgba(31,132,85,0.42);">Naplánovat konzultaci<span class="material-symbols-outlined" aria-hidden="true" style="font-size:18px;">arrow_forward</span></a>
+        <a href="#cenik" style="display:inline-flex;align-items:center;justify-content:center;padding:17px 34px;border-radius:999px;border:1px solid rgba(70,206,142,0.4);color:#46ce8e;font-family:'JetBrains Mono',monospace;font-size:14px;transition:border-color .3s ease,background .3s ease;" style-hover="border-color:#46ce8e;background:rgba(70,206,142,0.07);">Orientační ceník</a>
       </div>
-      <ul data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);list-style:none;margin:34px 0 0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:12px 26px;color:#86948a;font-size:13.5px;">
-        <li style="display:flex;align-items:center;gap:7px;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:16px;color:#4edea3;">schedule</span>Odpovídáme do 24 hodin</li>
-        <li style="display:flex;align-items:center;gap:7px;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:16px;color:#4edea3;">handshake</span>První konzultace zdarma</li>
-        <li style="display:flex;align-items:center;gap:7px;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:16px;color:#4edea3;">lock</span>Kód i data zůstávají vaše</li>
-      </ul>
-    </section>
-
-    <!-- Services -->
-    <section id="sluzby" style="padding: 0 20px; max-width: 1280px; margin: 0 auto; width: 100%; position: relative; scroll-margin-top: 104px;">
-      <div data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);text-align:center;max-width:640px;margin:0 auto 56px;">
-        <div style="font-family:'JetBrains Mono',monospace;color:#4edea3;font-size:13px;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:12px;">Služby</div>
-        <h2 style="font-family:'Be Vietnam Pro',sans-serif;font-weight:600;font-size:clamp(26px,3vw,34px);margin:0 0 14px;">S čím vám pomůžeme</h2>
-        <p style="color:#bbcabf;font-size:16px;margin:0;">Komplexní péče o vaše digitální produkty od prvního nápadu po dlouhodobý provoz.</p>
-      </div>
-      <div data-cards-grid="true" style="display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(252px,1fr));">
-        <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:14px;padding:22px;border:1px solid rgba(78,222,163,0.1);">
-          <div style="width:40px;height:40px;border-radius:10px;background:rgba(78,222,163,0.1);display:flex;align-items:center;justify-content:center;color:#4edea3;margin-bottom:16px;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">code</span></div>
-          <h3 style="font-family:'Be Vietnam Pro',sans-serif;font-size:17px;font-weight:600;margin:0 0 8px;letter-spacing:-0.01em;">Vývoj software na míru</h3>
-          <p style="color:#bbcabf;font-size:14px;line-height:1.6;margin:0;">Webové a mobilní aplikace, interní systémy a integrace navržené přesně podle vašich procesů.</p>
-        </article>
-        <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:14px;padding:22px;border:1px solid rgba(78,222,163,0.1);">
-          <div style="width:40px;height:40px;border-radius:10px;background:rgba(78,222,163,0.1);display:flex;align-items:center;justify-content:center;color:#4edea3;margin-bottom:16px;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">settings_suggest</span></div>
-          <h3 style="font-family:'Be Vietnam Pro',sans-serif;font-size:17px;font-weight:600;margin:0 0 8px;letter-spacing:-0.01em;">Správa a údržba</h3>
-          <p style="color:#bbcabf;font-size:14px;line-height:1.6;margin:0;">Proaktivní monitoring, pravidelné aktualizace a technická podpora, díky které systém spolehlivě běží.</p>
-        </article>
-        <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:14px;padding:22px;border:1px solid rgba(78,222,163,0.1);">
-          <div style="width:40px;height:40px;border-radius:10px;background:rgba(78,222,163,0.1);display:flex;align-items:center;justify-content:center;color:#4edea3;margin-bottom:16px;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">analytics</span></div>
-          <h3 style="font-family:'Be Vietnam Pro',sans-serif;font-size:17px;font-weight:600;margin:0 0 8px;letter-spacing:-0.01em;">Konzultace a analýza</h3>
-          <p style="color:#bbcabf;font-size:14px;line-height:1.6;margin:0;">Důkladná analýza požadavků a návrh architektury s jasným rozpočtem i harmonogramem.</p>
-        </article>
-        <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:14px;padding:22px;border:1px solid rgba(78,222,163,0.1);">
-          <div style="width:40px;height:40px;border-radius:10px;background:rgba(78,222,163,0.1);display:flex;align-items:center;justify-content:center;color:#4edea3;margin-bottom:16px;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">trending_up</span></div>
-          <h3 style="font-family:'Be Vietnam Pro',sans-serif;font-size:17px;font-weight:600;margin:0 0 8px;letter-spacing:-0.01em;">Škálovatelnost a výkon</h3>
-          <p style="color:#bbcabf;font-size:14px;line-height:1.6;margin:0;">Architektura připravená na růst od prvních uživatelů až po tisíce transakcí denně.</p>
-        </article>
-      </div>
+      <p data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);display:flex;align-items:center;gap:8px;margin:30px 0 0;color:#86948a;font-size:13.5px;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:16px;color:#46ce8e;">person</span>Za studiem stojím já, Vít Vedral domlouváte se rovnou se mnou, ne s obchodním oddělením.</p>
     </section>
 
     <!-- Ceník -->
     <section id="cenik" style="padding:0 20px;max-width:1280px;margin:0 auto;width:100%;scroll-margin-top:104px;">
       <div data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);text-align:center;max-width:680px;margin:0 auto 48px;">
-        <div style="font-family:'JetBrains Mono',monospace;color:#4edea3;font-size:13px;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:12px;">Ceník</div>
+        <div style="font-family:'JetBrains Mono',monospace;color:#46ce8e;font-size:13px;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:12px;">Ceník</div>
         <h2 style="font-family:'Be Vietnam Pro',sans-serif;font-weight:600;font-size:clamp(26px,3vw,34px);margin:0 0 14px;letter-spacing:-0.015em;">Orientační ceny</h2>
         <p style="color:#bbcabf;font-size:16px;line-height:1.6;margin:0;">Ceny vycházejí z našich obvyklých projektů a slouží k prvnímu odhadu rozpočtu. Konečnou částku stanovíme až po konzultaci, kdy víme, co přesně systém musí umět. Uvedené částky jsou bez DPH.</p>
       </div>
@@ -240,45 +201,45 @@
             <p style="color:#86948a;font-size:14px;line-height:1.55;margin:0;">Od jednoduché vizitky po web s vlastními funkcemi.</p>
           </div>
           <div style="display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));">
-            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:14px;padding:24px;border:1px solid rgba(78,222,163,0.1);display:flex;flex-direction:column;gap:14px;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(78,222,163,0.35);box-shadow:0 10px 30px rgba(0,0,0,0.28);">
-              <div style="width:38px;height:38px;border-radius:10px;background:rgba(78,222,163,0.1);display:flex;align-items:center;justify-content:center;color:#4edea3;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">language</span></div>
+            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:16px;padding:24px;border:1px solid rgba(70,206,142,0.1);display:flex;flex-direction:column;gap:14px;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(70,206,142,0.35);box-shadow:0 10px 30px rgba(0,0,0,0.28);">
+              <div style="width:38px;height:38px;border-radius:10px;background:rgba(70,206,142,0.1);display:flex;align-items:center;justify-content:center;color:#46ce8e;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">language</span></div>
               <h4 style="font-family:'Be Vietnam Pro',sans-serif;font-size:18px;font-weight:600;margin:0;color:#d7e3fc;letter-spacing:-0.01em;">Jednostránkový web</h4>
               <p style="color:#bbcabf;font-size:14px;line-height:1.6;margin:0;">Prezentace firmy, služby nebo akce na jedné stránce s kontaktním formulářem.</p>
-              <div><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#86948a;display:block;margin-bottom:8px;">Orientačně od</span><span style="font-family:'JetBrains Mono',monospace;font-size:27px;font-weight:600;color:#4edea3;line-height:1;">18 000 Kč</span></div>
+              <div><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#86948a;display:block;margin-bottom:8px;">Orientačně od</span><span style="font-family:'JetBrains Mono',monospace;font-size:27px;font-weight:600;color:#46ce8e;line-height:1;">18 000 Kč</span></div>
               <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px;">
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Návrh vzhledu podle vaší značky</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Responzivní zobrazení na mobilu i desktopu</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Kontaktní formulář a mapa</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Základní SEO a rychlé načítání</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Nasazení na doménu a HTTPS</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Návrh vzhledu podle vaší značky</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Responzivní zobrazení na mobilu i desktopu</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Kontaktní formulář a mapa</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Základní SEO a rychlé načítání</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Nasazení na doménu a HTTPS</span></li>
               </ul>
               <p style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#86948a;border-top:1px solid rgba(215,227,252,0.07);padding-top:12px;margin:auto 0 0;">Dodání 1–2 týdny · 1 jazyk</p>
             </article>
-            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:14px;padding:24px;border:1px solid rgba(78,222,163,0.1);display:flex;flex-direction:column;gap:14px;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(78,222,163,0.35);box-shadow:0 10px 30px rgba(0,0,0,0.28);">
-              <div style="width:38px;height:38px;border-radius:10px;background:rgba(78,222,163,0.1);display:flex;align-items:center;justify-content:center;color:#4edea3;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">corporate_fare</span></div>
+            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:16px;padding:24px;border:1px solid rgba(70,206,142,0.1);display:flex;flex-direction:column;gap:14px;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(70,206,142,0.35);box-shadow:0 10px 30px rgba(0,0,0,0.28);">
+              <div style="width:38px;height:38px;border-radius:10px;background:rgba(70,206,142,0.1);display:flex;align-items:center;justify-content:center;color:#46ce8e;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">corporate_fare</span></div>
               <h4 style="font-family:'Be Vietnam Pro',sans-serif;font-size:18px;font-weight:600;margin:0;color:#d7e3fc;letter-spacing:-0.01em;">Firemní web</h4>
               <p style="color:#bbcabf;font-size:14px;line-height:1.6;margin:0;">Web o více stránkách, který si sami spravujete: služby, tým, aktuality, reference.</p>
-              <div><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#86948a;display:block;margin-bottom:8px;">Orientačně od</span><span style="font-family:'JetBrains Mono',monospace;font-size:27px;font-weight:600;color:#4edea3;line-height:1;">45 000 Kč</span></div>
+              <div><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#86948a;display:block;margin-bottom:8px;">Orientačně od</span><span style="font-family:'JetBrains Mono',monospace;font-size:27px;font-weight:600;color:#46ce8e;line-height:1;">45 000 Kč</span></div>
               <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px;">
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Administrace pro úpravy textů a obrázků</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Blog nebo sekce aktualit</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Formuláře s odesíláním na e-mail</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Napojení na analytiku bez cookies</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Zaškolení a příručka pro obsluhu</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Administrace pro úpravy textů a obrázků</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Blog nebo sekce aktualit</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Formuláře s odesíláním na e-mail</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Napojení na analytiku bez cookies</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Zaškolení a příručka pro obsluhu</span></li>
               </ul>
               <p style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#86948a;border-top:1px solid rgba(215,227,252,0.07);padding-top:12px;margin:auto 0 0;">Dodání 3–5 týdnů · 5–10 stran</p>
             </article>
-            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:14px;padding:24px;border:1px solid rgba(78,222,163,0.1);display:flex;flex-direction:column;gap:14px;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(78,222,163,0.35);box-shadow:0 10px 30px rgba(0,0,0,0.28);">
-              <div style="width:38px;height:38px;border-radius:10px;background:rgba(78,222,163,0.1);display:flex;align-items:center;justify-content:center;color:#4edea3;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">shopping_cart</span></div>
+            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:16px;padding:24px;border:1px solid rgba(70,206,142,0.1);display:flex;flex-direction:column;gap:14px;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(70,206,142,0.35);box-shadow:0 10px 30px rgba(0,0,0,0.28);">
+              <div style="width:38px;height:38px;border-radius:10px;background:rgba(70,206,142,0.1);display:flex;align-items:center;justify-content:center;color:#46ce8e;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">shopping_cart</span></div>
               <h4 style="font-family:'Be Vietnam Pro',sans-serif;font-size:18px;font-weight:600;margin:0;color:#d7e3fc;letter-spacing:-0.01em;">Web nebo e-shop na míru</h4>
               <p style="color:#bbcabf;font-size:14px;line-height:1.6;margin:0;">Rozsáhlejší web s vlastními funkcemi, prodejem nebo napojením na další systémy.</p>
-              <div><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#86948a;display:block;margin-bottom:8px;">Orientačně od</span><span style="font-family:'JetBrains Mono',monospace;font-size:27px;font-weight:600;color:#4edea3;line-height:1;">90 000 Kč</span></div>
+              <div><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#86948a;display:block;margin-bottom:8px;">Orientačně od</span><span style="font-family:'JetBrains Mono',monospace;font-size:27px;font-weight:600;color:#46ce8e;line-height:1;">90 000 Kč</span></div>
               <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px;">
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Vlastní funkce podle vašich procesů</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Prodej s platební bránou a fakturací</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Vícejazyčné verze</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Napojení na sklad, účetnictví nebo dopravce</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Návrh architektury připravené na růst</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Vlastní funkce podle vašich procesů</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Prodej s platební bránou a fakturací</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Vícejazyčné verze</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Napojení na sklad, účetnictví nebo dopravce</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Architektura připravená na růst, od prvních uživatelů až po tisíce transakcí denně</span></li>
               </ul>
               <p style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#86948a;border-top:1px solid rgba(215,227,252,0.07);padding-top:12px;margin:auto 0 0;">Dodání 6–12 týdnů · dle rozsahu</p>
             </article>
@@ -291,47 +252,47 @@
             <p style="color:#86948a;font-size:14px;line-height:1.55;margin:0;">Rezervace se liší podle toho, co si zákazník vybírá, jen čas, konkrétní sedadlo, nebo pokoj na několik dní. Podle toho roste i složitost a cena.</p>
           </div>
           <div style="display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));">
-            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:14px;padding:24px;border:1px solid rgba(78,222,163,0.1);display:flex;flex-direction:column;gap:14px;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(78,222,163,0.35);box-shadow:0 10px 30px rgba(0,0,0,0.28);">
-              <div style="width:38px;height:38px;border-radius:10px;background:rgba(78,222,163,0.1);display:flex;align-items:center;justify-content:center;color:#4edea3;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">content_cut</span></div>
+            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:16px;padding:24px;border:1px solid rgba(70,206,142,0.1);display:flex;flex-direction:column;gap:14px;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(70,206,142,0.35);box-shadow:0 10px 30px rgba(0,0,0,0.28);">
+              <div style="width:38px;height:38px;border-radius:10px;background:rgba(70,206,142,0.1);display:flex;align-items:center;justify-content:center;color:#46ce8e;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">content_cut</span></div>
               <h4 style="font-family:'Be Vietnam Pro',sans-serif;font-size:18px;font-weight:600;margin:0;color:#d7e3fc;letter-spacing:-0.01em;">Objednávkový systém na termín</h4>
               <p style="color:#bbcabf;font-size:14px;line-height:1.6;margin:0;">Pro kadeřnictví, kosmetiku, autoservis nebo ordinaci. Klient si vybere službu, pracovníka a volný čas.</p>
-              <div><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#86948a;display:block;margin-bottom:8px;">Orientačně od</span><span style="font-family:'JetBrains Mono',monospace;font-size:27px;font-weight:600;color:#4edea3;line-height:1;">55 000 Kč</span></div>
+              <div><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#86948a;display:block;margin-bottom:8px;">Orientačně od</span><span style="font-family:'JetBrains Mono',monospace;font-size:27px;font-weight:600;color:#46ce8e;line-height:1;">55 000 Kč</span></div>
               <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px;">
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Seznam služeb s délkou a cenou</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Více pracovníků, každý s vlastním kalendářem</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Otevírací doba, dovolené a blokace termínů</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Potvrzení e-mailem a připomínka den předem</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Zrušení a přeobjednání klientem přes odkaz</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Export do Google nebo Apple kalendáře</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Seznam služeb s délkou a cenou</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Více pracovníků, každý s vlastním kalendářem</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Otevírací doba, dovolené a blokace termínů</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Potvrzení e-mailem a připomínka den předem</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Zrušení a přeobjednání klientem přes odkaz</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Export do Google nebo Apple kalendáře</span></li>
               </ul>
               <p style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#86948a;border-top:1px solid rgba(215,227,252,0.07);padding-top:12px;margin:auto 0 0;">Dodání 3–5 týdnů</p>
             </article>
-            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:14px;padding:24px;border:1px solid rgba(78,222,163,0.1);display:flex;flex-direction:column;gap:14px;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(78,222,163,0.35);box-shadow:0 10px 30px rgba(0,0,0,0.28);">
-              <div style="width:38px;height:38px;border-radius:10px;background:rgba(78,222,163,0.1);display:flex;align-items:center;justify-content:center;color:#4edea3;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">theater_comedy</span></div>
+            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:16px;padding:24px;border:1px solid rgba(70,206,142,0.1);display:flex;flex-direction:column;gap:14px;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(70,206,142,0.35);box-shadow:0 10px 30px rgba(0,0,0,0.28);">
+              <div style="width:38px;height:38px;border-radius:10px;background:rgba(70,206,142,0.1);display:flex;align-items:center;justify-content:center;color:#46ce8e;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">theater_comedy</span></div>
               <h4 style="font-family:'Be Vietnam Pro',sans-serif;font-size:18px;font-weight:600;margin:0;color:#d7e3fc;letter-spacing:-0.01em;">Sálový systém s výběrem místa</h4>
               <p style="color:#bbcabf;font-size:14px;line-height:1.6;margin:0;">Pro divadla, kina a koncerty. Návštěvník si klikne na konkrétní sedadlo v plánu sálu.</p>
-              <div><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#86948a;display:block;margin-bottom:8px;">Orientačně od</span><span style="font-family:'JetBrains Mono',monospace;font-size:27px;font-weight:600;color:#4edea3;line-height:1;">130 000 Kč</span></div>
+              <div><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#86948a;display:block;margin-bottom:8px;">Orientačně od</span><span style="font-family:'JetBrains Mono',monospace;font-size:27px;font-weight:600;color:#46ce8e;line-height:1;">130 000 Kč</span></div>
               <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px;">
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Interaktivní plán sálu s řadami a sedadly</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Cenové kategorie míst a slevy</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Dočasná blokace sedadla po dobu nákupu</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Platební brána a e-vstupenka s QR kódem</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Odbavení na vstupu skenerem nebo mobilem</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Přehled obsazenosti a tržeb po představeních</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Interaktivní plán sálu s řadami a sedadly</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Cenové kategorie míst a slevy</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Dočasná blokace sedadla po dobu nákupu</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Platební brána a e-vstupenka s QR kódem</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Odbavení na vstupu skenerem nebo mobilem</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Přehled obsazenosti a tržeb po představeních</span></li>
               </ul>
               <p style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#86948a;border-top:1px solid rgba(215,227,252,0.07);padding-top:12px;margin:auto 0 0;">Dodání 6–10 týdnů</p>
             </article>
-            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:14px;padding:24px;border:1px solid rgba(78,222,163,0.1);display:flex;flex-direction:column;gap:14px;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(78,222,163,0.35);box-shadow:0 10px 30px rgba(0,0,0,0.28);">
-              <div style="width:38px;height:38px;border-radius:10px;background:rgba(78,222,163,0.1);display:flex;align-items:center;justify-content:center;color:#4edea3;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">hotel</span></div>
+            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:16px;padding:24px;border:1px solid rgba(70,206,142,0.1);display:flex;flex-direction:column;gap:14px;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(70,206,142,0.35);box-shadow:0 10px 30px rgba(0,0,0,0.28);">
+              <div style="width:38px;height:38px;border-radius:10px;background:rgba(70,206,142,0.1);display:flex;align-items:center;justify-content:center;color:#46ce8e;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">hotel</span></div>
               <h4 style="font-family:'Be Vietnam Pro',sans-serif;font-size:18px;font-weight:600;margin:0;color:#d7e3fc;letter-spacing:-0.01em;">Ubytovací systém na více dní</h4>
               <p style="color:#bbcabf;font-size:14px;line-height:1.6;margin:0;">Pro hotely, penziony a apartmány. Hosté rezervují konkrétní pokoj na rozsah dat.</p>
-              <div><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#86948a;display:block;margin-bottom:8px;">Orientačně od</span><span style="font-family:'JetBrains Mono',monospace;font-size:27px;font-weight:600;color:#4edea3;line-height:1;">160 000 Kč</span></div>
+              <div><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#86948a;display:block;margin-bottom:8px;">Orientačně od</span><span style="font-family:'JetBrains Mono',monospace;font-size:27px;font-weight:600;color:#46ce8e;line-height:1;">160 000 Kč</span></div>
               <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px;">
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Typy pokojů, kapacity a dostupnost v kalendáři</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Sezónní ceníky a minimální délka pobytu</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Zálohy, storno podmínky a automatické potvrzení</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Přehled příjezdů, odjezdů a úklidu</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Napojení na Booking.com a Airbnb (příplatek)</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Typy pokojů, kapacity a dostupnost v kalendáři</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Sezónní ceníky a minimální délka pobytu</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Zálohy, storno podmínky a automatické potvrzení</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Přehled příjezdů, odjezdů a úklidu</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Napojení na Booking.com a Airbnb (příplatek)</span></li>
               </ul>
               <p style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#86948a;border-top:1px solid rgba(215,227,252,0.07);padding-top:12px;margin:auto 0 0;">Dodání 8–12 týdnů</p>
             </article>
@@ -344,31 +305,31 @@
             <p style="color:#86948a;font-size:14px;line-height:1.55;margin:0;">Registrace uživatelů, přihlášení a správa oprávnění.</p>
           </div>
           <div style="display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));">
-            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:14px;padding:24px;border:1px solid rgba(78,222,163,0.1);display:flex;flex-direction:column;gap:14px;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(78,222,163,0.35);box-shadow:0 10px 30px rgba(0,0,0,0.28);">
-              <div style="width:38px;height:38px;border-radius:10px;background:rgba(78,222,163,0.1);display:flex;align-items:center;justify-content:center;color:#4edea3;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">person_add</span></div>
+            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:16px;padding:24px;border:1px solid rgba(70,206,142,0.1);display:flex;flex-direction:column;gap:14px;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(70,206,142,0.35);box-shadow:0 10px 30px rgba(0,0,0,0.28);">
+              <div style="width:38px;height:38px;border-radius:10px;background:rgba(70,206,142,0.1);display:flex;align-items:center;justify-content:center;color:#46ce8e;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">person_add</span></div>
               <h4 style="font-family:'Be Vietnam Pro',sans-serif;font-size:18px;font-weight:600;margin:0;color:#d7e3fc;letter-spacing:-0.01em;">Registrace a přihlášení</h4>
               <p style="color:#bbcabf;font-size:14px;line-height:1.6;margin:0;">Uživatelské účty pro váš web nebo aplikaci, bezpečně a podle GDPR.</p>
-              <div><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#86948a;display:block;margin-bottom:8px;">Orientačně od</span><span style="font-family:'JetBrains Mono',monospace;font-size:27px;font-weight:600;color:#4edea3;line-height:1;">28 000 Kč</span></div>
+              <div><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#86948a;display:block;margin-bottom:8px;">Orientačně od</span><span style="font-family:'JetBrains Mono',monospace;font-size:27px;font-weight:600;color:#46ce8e;line-height:1;">28 000 Kč</span></div>
               <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px;">
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Registrace s ověřením e-mailu</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Přihlášení a obnova zapomenutého hesla</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Uživatelský profil a správa údajů</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Role a oprávnění (klient, obsluha, správce)</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Bezpečné ukládání hesel a ochrana proti zneužití</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Registrace s ověřením e-mailu</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Přihlášení a obnova zapomenutého hesla</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Uživatelský profil a správa údajů</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Role a oprávnění (klient, obsluha, správce)</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Bezpečné ukládání hesel a ochrana proti zneužití</span></li>
               </ul>
               <p style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#86948a;border-top:1px solid rgba(215,227,252,0.07);padding-top:12px;margin:auto 0 0;">Dodání 2–3 týdny</p>
             </article>
-            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:14px;padding:24px;border:1px solid rgba(78,222,163,0.1);display:flex;flex-direction:column;gap:14px;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(78,222,163,0.35);box-shadow:0 10px 30px rgba(0,0,0,0.28);">
-              <div style="width:38px;height:38px;border-radius:10px;background:rgba(78,222,163,0.1);display:flex;align-items:center;justify-content:center;color:#4edea3;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">key</span></div>
+            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:16px;padding:24px;border:1px solid rgba(70,206,142,0.1);display:flex;flex-direction:column;gap:14px;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(70,206,142,0.35);box-shadow:0 10px 30px rgba(0,0,0,0.28);">
+              <div style="width:38px;height:38px;border-radius:10px;background:rgba(70,206,142,0.1);display:flex;align-items:center;justify-content:center;color:#46ce8e;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">key</span></div>
               <h4 style="font-family:'Be Vietnam Pro',sans-serif;font-size:18px;font-weight:600;margin:0;color:#d7e3fc;letter-spacing:-0.01em;">Účtový systém s jedním přihlášením</h4>
               <p style="color:#bbcabf;font-size:14px;line-height:1.6;margin:0;">Jeden účet do všech vašich aplikací, s dvoufázovým ověřením a přehledem aktivity.</p>
-              <div><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#86948a;display:block;margin-bottom:8px;">Orientačně od</span><span style="font-family:'JetBrains Mono',monospace;font-size:27px;font-weight:600;color:#4edea3;line-height:1;">75 000 Kč</span></div>
+              <div><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#86948a;display:block;margin-bottom:8px;">Orientačně od</span><span style="font-family:'JetBrains Mono',monospace;font-size:27px;font-weight:600;color:#46ce8e;line-height:1;">75 000 Kč</span></div>
               <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px;">
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Jedno přihlášení (SSO) napříč weby a aplikacemi</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Dvoufázové ověření a přihlášení přes Google nebo Apple</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Podrobná oprávnění a týmy či organizace</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Záznam přihlášení a změn pro audit</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>API pro mobilní aplikaci nebo další systémy</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Jedno přihlášení (SSO) napříč weby a aplikacemi</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Dvoufázové ověření a přihlášení přes Google nebo Apple</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Podrobná oprávnění a týmy či organizace</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Záznam přihlášení a změn pro audit</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>API pro mobilní aplikaci nebo další systémy</span></li>
               </ul>
               <p style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#86948a;border-top:1px solid rgba(215,227,252,0.07);padding-top:12px;margin:auto 0 0;">Dodání 4–8 týdnů</p>
             </article>
@@ -381,45 +342,45 @@
             <p style="color:#86948a;font-size:14px;line-height:1.55;margin:0;">Nejčastější zadání, se kterými za námi firmy chodí.</p>
           </div>
           <div style="display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));">
-            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:12px;padding:18px;border:1px solid rgba(78,222,163,0.1);display:flex;gap:14px;align-items:flex-start;transition:transform .25s ease,border-color .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(78,222,163,0.35);">
-              <div style="width:38px;height:38px;border-radius:10px;background:rgba(78,222,163,0.1);display:flex;align-items:center;justify-content:center;color:#4edea3;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">dashboard</span></div>
-              <div style="min-width:0;"><h4 style="font-family:'Be Vietnam Pro',sans-serif;font-size:15.5px;font-weight:600;margin:0 0 4px;color:#d7e3fc;">Klientský portál nebo členská sekce</h4><p style="color:#bbcabf;font-size:13px;line-height:1.5;margin:0 0 8px;">Zákazník vidí své zakázky, dokumenty a faktury.</p><span style="font-family:'JetBrains Mono',monospace;font-size:14px;color:#4edea3;">od 60 000 Kč</span></div>
+            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:16px;padding:18px;border:1px solid rgba(70,206,142,0.1);display:flex;gap:14px;align-items:flex-start;transition:transform .25s ease,border-color .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(70,206,142,0.35);">
+              <div style="width:38px;height:38px;border-radius:10px;background:rgba(70,206,142,0.1);display:flex;align-items:center;justify-content:center;color:#46ce8e;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">dashboard</span></div>
+              <div style="min-width:0;"><h4 style="font-family:'Be Vietnam Pro',sans-serif;font-size:15.5px;font-weight:600;margin:0 0 4px;color:#d7e3fc;">Klientský portál nebo členská sekce</h4><p style="color:#bbcabf;font-size:13px;line-height:1.5;margin:0 0 8px;">Zákazník vidí své zakázky, dokumenty a faktury.</p><span style="font-family:'JetBrains Mono',monospace;font-size:14px;color:#46ce8e;">od 60 000 Kč</span></div>
             </article>
-            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:12px;padding:18px;border:1px solid rgba(78,222,163,0.1);display:flex;gap:14px;align-items:flex-start;transition:transform .25s ease,border-color .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(78,222,163,0.35);">
-              <div style="width:38px;height:38px;border-radius:10px;background:rgba(78,222,163,0.1);display:flex;align-items:center;justify-content:center;color:#4edea3;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">inventory_2</span></div>
-              <div style="min-width:0;"><h4 style="font-family:'Be Vietnam Pro',sans-serif;font-size:15.5px;font-weight:600;margin:0 0 4px;color:#d7e3fc;">Interní systém na míru</h4><p style="color:#bbcabf;font-size:13px;line-height:1.5;margin:0 0 8px;">Evidence zakázek, CRM, sklad, docházka nebo výkazy práce.</p><span style="font-family:'JetBrains Mono',monospace;font-size:14px;color:#4edea3;">od 90 000 Kč</span></div>
+            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:16px;padding:18px;border:1px solid rgba(70,206,142,0.1);display:flex;gap:14px;align-items:flex-start;transition:transform .25s ease,border-color .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(70,206,142,0.35);">
+              <div style="width:38px;height:38px;border-radius:10px;background:rgba(70,206,142,0.1);display:flex;align-items:center;justify-content:center;color:#46ce8e;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">inventory_2</span></div>
+              <div style="min-width:0;"><h4 style="font-family:'Be Vietnam Pro',sans-serif;font-size:15.5px;font-weight:600;margin:0 0 4px;color:#d7e3fc;">Interní systém na míru</h4><p style="color:#bbcabf;font-size:13px;line-height:1.5;margin:0 0 8px;">Evidence zakázek, CRM, sklad, docházka nebo výkazy práce.</p><span style="font-family:'JetBrains Mono',monospace;font-size:14px;color:#46ce8e;">od 90 000 Kč</span></div>
             </article>
-            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:12px;padding:18px;border:1px solid rgba(78,222,163,0.1);display:flex;gap:14px;align-items:flex-start;transition:transform .25s ease,border-color .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(78,222,163,0.35);">
-              <div style="width:38px;height:38px;border-radius:10px;background:rgba(78,222,163,0.1);display:flex;align-items:center;justify-content:center;color:#4edea3;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">hub</span></div>
-              <div style="min-width:0;"><h4 style="font-family:'Be Vietnam Pro',sans-serif;font-size:15.5px;font-weight:600;margin:0 0 4px;color:#d7e3fc;">Integrace a napojení systémů</h4><p style="color:#bbcabf;font-size:13px;line-height:1.5;margin:0 0 8px;">Účetnictví (Fakturoid, iDoklad, Pohoda), ERP, e-shop, dopravci.</p><span style="font-family:'JetBrains Mono',monospace;font-size:14px;color:#4edea3;">od 20 000 Kč</span></div>
+            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:16px;padding:18px;border:1px solid rgba(70,206,142,0.1);display:flex;gap:14px;align-items:flex-start;transition:transform .25s ease,border-color .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(70,206,142,0.35);">
+              <div style="width:38px;height:38px;border-radius:10px;background:rgba(70,206,142,0.1);display:flex;align-items:center;justify-content:center;color:#46ce8e;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">hub</span></div>
+              <div style="min-width:0;"><h4 style="font-family:'Be Vietnam Pro',sans-serif;font-size:15.5px;font-weight:600;margin:0 0 4px;color:#d7e3fc;">Integrace a napojení systémů</h4><p style="color:#bbcabf;font-size:13px;line-height:1.5;margin:0 0 8px;">Účetnictví (Fakturoid, iDoklad, Pohoda), ERP, e-shop, dopravci.</p><span style="font-family:'JetBrains Mono',monospace;font-size:14px;color:#46ce8e;">od 20 000 Kč</span></div>
             </article>
-            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:12px;padding:18px;border:1px solid rgba(78,222,163,0.1);display:flex;gap:14px;align-items:flex-start;transition:transform .25s ease,border-color .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(78,222,163,0.35);">
-              <div style="width:38px;height:38px;border-radius:10px;background:rgba(78,222,163,0.1);display:flex;align-items:center;justify-content:center;color:#4edea3;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">bolt</span></div>
-              <div style="min-width:0;"><h4 style="font-family:'Be Vietnam Pro',sans-serif;font-size:15.5px;font-weight:600;margin:0 0 4px;color:#d7e3fc;">Automatizace a reporty</h4><p style="color:#bbcabf;font-size:13px;line-height:1.5;margin:0 0 8px;">Generování dokumentů, importy dat a pravidelné výstupy bez ruční práce.</p><span style="font-family:'JetBrains Mono',monospace;font-size:14px;color:#4edea3;">od 15 000 Kč</span></div>
+            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:16px;padding:18px;border:1px solid rgba(70,206,142,0.1);display:flex;gap:14px;align-items:flex-start;transition:transform .25s ease,border-color .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(70,206,142,0.35);">
+              <div style="width:38px;height:38px;border-radius:10px;background:rgba(70,206,142,0.1);display:flex;align-items:center;justify-content:center;color:#46ce8e;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">bolt</span></div>
+              <div style="min-width:0;"><h4 style="font-family:'Be Vietnam Pro',sans-serif;font-size:15.5px;font-weight:600;margin:0 0 4px;color:#d7e3fc;">Automatizace a reporty</h4><p style="color:#bbcabf;font-size:13px;line-height:1.5;margin:0 0 8px;">Generování dokumentů, importy dat a pravidelné výstupy bez ruční práce.</p><span style="font-family:'JetBrains Mono',monospace;font-size:14px;color:#46ce8e;">od 15 000 Kč</span></div>
             </article>
-            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:12px;padding:18px;border:1px solid rgba(78,222,163,0.1);display:flex;gap:14px;align-items:flex-start;transition:transform .25s ease,border-color .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(78,222,163,0.35);">
-              <div style="width:38px;height:38px;border-radius:10px;background:rgba(78,222,163,0.1);display:flex;align-items:center;justify-content:center;color:#4edea3;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">smart_toy</span></div>
-              <div style="min-width:0;"><h4 style="font-family:'Be Vietnam Pro',sans-serif;font-size:15.5px;font-weight:600;margin:0 0 4px;color:#d7e3fc;">AI funkce ve vašem systému</h4><p style="color:#bbcabf;font-size:13px;line-height:1.5;margin:0 0 8px;">Asistent nad firemními dokumenty, třídění e-mailů, čtení dokladů.</p><span style="font-family:'JetBrains Mono',monospace;font-size:14px;color:#4edea3;">od 45 000 Kč</span></div>
+            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:16px;padding:18px;border:1px solid rgba(70,206,142,0.1);display:flex;gap:14px;align-items:flex-start;transition:transform .25s ease,border-color .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(70,206,142,0.35);">
+              <div style="width:38px;height:38px;border-radius:10px;background:rgba(70,206,142,0.1);display:flex;align-items:center;justify-content:center;color:#46ce8e;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">smart_toy</span></div>
+              <div style="min-width:0;"><h4 style="font-family:'Be Vietnam Pro',sans-serif;font-size:15.5px;font-weight:600;margin:0 0 4px;color:#d7e3fc;">AI funkce ve vašem systému</h4><p style="color:#bbcabf;font-size:13px;line-height:1.5;margin:0 0 8px;">Asistent nad firemními dokumenty, třídění e-mailů, čtení dokladů.</p><span style="font-family:'JetBrains Mono',monospace;font-size:14px;color:#46ce8e;">od 45 000 Kč</span></div>
             </article>
-            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:12px;padding:18px;border:1px solid rgba(78,222,163,0.1);display:flex;gap:14px;align-items:flex-start;transition:transform .25s ease,border-color .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(78,222,163,0.35);">
-              <div style="width:38px;height:38px;border-radius:10px;background:rgba(78,222,163,0.1);display:flex;align-items:center;justify-content:center;color:#4edea3;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">school</span></div>
-              <div style="min-width:0;"><h4 style="font-family:'Be Vietnam Pro',sans-serif;font-size:15.5px;font-weight:600;margin:0 0 4px;color:#d7e3fc;">E-learning, kurzy a testy</h4><p style="color:#bbcabf;font-size:13px;line-height:1.5;margin:0 0 8px;">Lekce, cvičení, vyhodnocení a certifikáty pro studenty nebo zaměstnance.</p><span style="font-family:'JetBrains Mono',monospace;font-size:14px;color:#4edea3;">od 70 000 Kč</span></div>
+            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:16px;padding:18px;border:1px solid rgba(70,206,142,0.1);display:flex;gap:14px;align-items:flex-start;transition:transform .25s ease,border-color .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(70,206,142,0.35);">
+              <div style="width:38px;height:38px;border-radius:10px;background:rgba(70,206,142,0.1);display:flex;align-items:center;justify-content:center;color:#46ce8e;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">school</span></div>
+              <div style="min-width:0;"><h4 style="font-family:'Be Vietnam Pro',sans-serif;font-size:15.5px;font-weight:600;margin:0 0 4px;color:#d7e3fc;">E-learning, kurzy a testy</h4><p style="color:#bbcabf;font-size:13px;line-height:1.5;margin:0 0 8px;">Lekce, cvičení, vyhodnocení a certifikáty pro studenty nebo zaměstnance.</p><span style="font-family:'JetBrains Mono',monospace;font-size:14px;color:#46ce8e;">od 70 000 Kč</span></div>
             </article>
-            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:12px;padding:18px;border:1px solid rgba(78,222,163,0.1);display:flex;gap:14px;align-items:flex-start;transition:transform .25s ease,border-color .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(78,222,163,0.35);">
-              <div style="width:38px;height:38px;border-radius:10px;background:rgba(78,222,163,0.1);display:flex;align-items:center;justify-content:center;color:#4edea3;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">phone_iphone</span></div>
-              <div style="min-width:0;"><h4 style="font-family:'Be Vietnam Pro',sans-serif;font-size:15.5px;font-weight:600;margin:0 0 4px;color:#d7e3fc;">Mobilní aplikace nebo PWA</h4><p style="color:#bbcabf;font-size:13px;line-height:1.5;margin:0 0 8px;">Aplikace pro iOS a Android, případně web fungující jako appka.</p><span style="font-family:'JetBrains Mono',monospace;font-size:14px;color:#4edea3;">od 120 000 Kč</span></div>
+            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:16px;padding:18px;border:1px solid rgba(70,206,142,0.1);display:flex;gap:14px;align-items:flex-start;transition:transform .25s ease,border-color .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(70,206,142,0.35);">
+              <div style="width:38px;height:38px;border-radius:10px;background:rgba(70,206,142,0.1);display:flex;align-items:center;justify-content:center;color:#46ce8e;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">phone_iphone</span></div>
+              <div style="min-width:0;"><h4 style="font-family:'Be Vietnam Pro',sans-serif;font-size:15.5px;font-weight:600;margin:0 0 4px;color:#d7e3fc;">Mobilní aplikace nebo PWA</h4><p style="color:#bbcabf;font-size:13px;line-height:1.5;margin:0 0 8px;">Aplikace pro iOS a Android, případně web fungující jako appka.</p><span style="font-family:'JetBrains Mono',monospace;font-size:14px;color:#46ce8e;">od 120 000 Kč</span></div>
             </article>
-            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:12px;padding:18px;border:1px solid rgba(78,222,163,0.1);display:flex;gap:14px;align-items:flex-start;transition:transform .25s ease,border-color .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(78,222,163,0.35);">
-              <div style="width:38px;height:38px;border-radius:10px;background:rgba(78,222,163,0.1);display:flex;align-items:center;justify-content:center;color:#4edea3;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">event_available</span></div>
-              <div style="min-width:0;"><h4 style="font-family:'Be Vietnam Pro',sans-serif;font-size:15.5px;font-weight:600;margin:0 0 4px;color:#d7e3fc;">Rezervace zdrojů a kapacit</h4><p style="color:#bbcabf;font-size:13px;line-height:1.5;margin:0 0 8px;">Sportoviště, zasedačky, půjčovny vybavení, kurzy a workshopy.</p><span style="font-family:'JetBrains Mono',monospace;font-size:14px;color:#4edea3;">od 60 000 Kč</span></div>
+            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:16px;padding:18px;border:1px solid rgba(70,206,142,0.1);display:flex;gap:14px;align-items:flex-start;transition:transform .25s ease,border-color .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(70,206,142,0.35);">
+              <div style="width:38px;height:38px;border-radius:10px;background:rgba(70,206,142,0.1);display:flex;align-items:center;justify-content:center;color:#46ce8e;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">event_available</span></div>
+              <div style="min-width:0;"><h4 style="font-family:'Be Vietnam Pro',sans-serif;font-size:15.5px;font-weight:600;margin:0 0 4px;color:#d7e3fc;">Rezervace zdrojů a kapacit</h4><p style="color:#bbcabf;font-size:13px;line-height:1.5;margin:0 0 8px;">Sportoviště, zasedačky, půjčovny vybavení, kurzy a workshopy.</p><span style="font-family:'JetBrains Mono',monospace;font-size:14px;color:#46ce8e;">od 60 000 Kč</span></div>
             </article>
-            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:12px;padding:18px;border:1px solid rgba(78,222,163,0.1);display:flex;gap:14px;align-items:flex-start;transition:transform .25s ease,border-color .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(78,222,163,0.35);">
-              <div style="width:38px;height:38px;border-radius:10px;background:rgba(78,222,163,0.1);display:flex;align-items:center;justify-content:center;color:#4edea3;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">monitor_heart</span></div>
-              <div style="min-width:0;"><h4 style="font-family:'Be Vietnam Pro',sans-serif;font-size:15.5px;font-weight:600;margin:0 0 4px;color:#d7e3fc;">Audit a zrychlení stávajícího webu</h4><p style="color:#bbcabf;font-size:13px;line-height:1.5;margin:0 0 8px;">Rozbor výkonu, bezpečnosti a SEO s konkrétním plánem úprav.</p><span style="font-family:'JetBrains Mono',monospace;font-size:14px;color:#4edea3;">od 9 900 Kč</span></div>
+            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:16px;padding:18px;border:1px solid rgba(70,206,142,0.1);display:flex;gap:14px;align-items:flex-start;transition:transform .25s ease,border-color .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(70,206,142,0.35);">
+              <div style="width:38px;height:38px;border-radius:10px;background:rgba(70,206,142,0.1);display:flex;align-items:center;justify-content:center;color:#46ce8e;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">monitor_heart</span></div>
+              <div style="min-width:0;"><h4 style="font-family:'Be Vietnam Pro',sans-serif;font-size:15.5px;font-weight:600;margin:0 0 4px;color:#d7e3fc;">Audit a zrychlení stávajícího webu</h4><p style="color:#bbcabf;font-size:13px;line-height:1.5;margin:0 0 8px;">Rozbor výkonu, bezpečnosti a SEO s konkrétním plánem úprav.</p><span style="font-family:'JetBrains Mono',monospace;font-size:14px;color:#46ce8e;">od 9 900 Kč</span></div>
             </article>
-            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:12px;padding:18px;border:1px solid rgba(78,222,163,0.1);display:flex;gap:14px;align-items:flex-start;transition:transform .25s ease,border-color .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(78,222,163,0.35);">
-              <div style="width:38px;height:38px;border-radius:10px;background:rgba(78,222,163,0.1);display:flex;align-items:center;justify-content:center;color:#4edea3;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">swap_horiz</span></div>
-              <div style="min-width:0;"><h4 style="font-family:'Be Vietnam Pro',sans-serif;font-size:15.5px;font-weight:600;margin:0 0 4px;color:#d7e3fc;">Převzetí a záchrana staršího projektu</h4><p style="color:#bbcabf;font-size:13px;line-height:1.5;margin:0 0 8px;">Zorientujeme se v cizím kódu, opravíme a převezmeme správu.</p><span style="font-family:'JetBrains Mono',monospace;font-size:14px;color:#4edea3;">od 25 000 Kč</span></div>
+            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:16px;padding:18px;border:1px solid rgba(70,206,142,0.1);display:flex;gap:14px;align-items:flex-start;transition:transform .25s ease,border-color .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(70,206,142,0.35);">
+              <div style="width:38px;height:38px;border-radius:10px;background:rgba(70,206,142,0.1);display:flex;align-items:center;justify-content:center;color:#46ce8e;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">swap_horiz</span></div>
+              <div style="min-width:0;"><h4 style="font-family:'Be Vietnam Pro',sans-serif;font-size:15.5px;font-weight:600;margin:0 0 4px;color:#d7e3fc;">Převzetí a záchrana staršího projektu</h4><p style="color:#bbcabf;font-size:13px;line-height:1.5;margin:0 0 8px;">Zorientujeme se v cizím kódu, opravíme a převezmeme správu.</p><span style="font-family:'JetBrains Mono',monospace;font-size:14px;color:#46ce8e;">od 25 000 Kč</span></div>
             </article>
           </div>
         </div>
@@ -428,23 +389,23 @@
           <div data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#101c2e;border-radius:16px;padding:28px;border:1px solid rgba(215,227,252,0.07);">
             <h3 style="font-family:'Be Vietnam Pro',sans-serif;font-weight:600;font-size:20px;margin:0 0 6px;color:#d7e3fc;">Doplňky k jakémukoli řešení</h3>
             <p style="color:#86948a;font-size:14px;line-height:1.55;margin:0 0 14px;">Připočítávají se k základní ceně systému.</p>
-            <div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding:12px 0;border-bottom:1px solid rgba(215,227,252,0.06);"><span style="color:#bbcabf;font-size:14px;">Platební brána (Comgate, GoPay, Stripe)</span><span style="font-family:'JetBrains Mono',monospace;font-size:13.5px;color:#4edea3;white-space:nowrap;">od 12 000 Kč</span></div>
-            <div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding:12px 0;border-bottom:1px solid rgba(215,227,252,0.06);"><span style="color:#bbcabf;font-size:14px;">SMS potvrzení a připomínky</span><span style="font-family:'JetBrains Mono',monospace;font-size:13.5px;color:#4edea3;white-space:nowrap;">od 8 000 Kč</span></div>
-            <div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding:12px 0;border-bottom:1px solid rgba(215,227,252,0.06);"><span style="color:#bbcabf;font-size:14px;">Další jazyková verze</span><span style="font-family:'JetBrains Mono',monospace;font-size:13.5px;color:#4edea3;white-space:nowrap;">od 9 000 Kč</span></div>
-            <div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding:12px 0;border-bottom:1px solid rgba(215,227,252,0.06);"><span style="color:#bbcabf;font-size:14px;">Napojení na fakturační systém</span><span style="font-family:'JetBrains Mono',monospace;font-size:13.5px;color:#4edea3;white-space:nowrap;">od 12 000 Kč</span></div>
-            <div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding:12px 0;border-bottom:1px solid rgba(215,227,252,0.06);"><span style="color:#bbcabf;font-size:14px;">Věrnostní program a slevové kódy</span><span style="font-family:'JetBrains Mono',monospace;font-size:13.5px;color:#4edea3;white-space:nowrap;">od 14 000 Kč</span></div>
-            <div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding:12px 0;border-bottom:1px solid rgba(215,227,252,0.06);"><span style="color:#bbcabf;font-size:14px;">Statistiky a reporty na míru</span><span style="font-family:'JetBrains Mono',monospace;font-size:13.5px;color:#4edea3;white-space:nowrap;">od 10 000 Kč</span></div>
-            <div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding:12px 0;border-bottom:1px solid rgba(215,227,252,0.06);"><span style="color:#bbcabf;font-size:14px;">Import dat ze stávajícího systému</span><span style="font-family:'JetBrains Mono',monospace;font-size:13.5px;color:#4edea3;white-space:nowrap;">od 8 000 Kč</span></div>
-            <div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding:12px 0;"><span style="color:#bbcabf;font-size:14px;">Grafický návrh nad rámec šablony</span><span style="font-family:'JetBrains Mono',monospace;font-size:13.5px;color:#4edea3;white-space:nowrap;">od 15 000 Kč</span></div>
+            <div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding:12px 0;border-bottom:1px solid rgba(215,227,252,0.06);"><span style="color:#bbcabf;font-size:14px;">Platební brána (Comgate, GoPay, Stripe)</span><span style="font-family:'JetBrains Mono',monospace;font-size:13.5px;color:#46ce8e;white-space:nowrap;">od 12 000 Kč</span></div>
+            <div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding:12px 0;border-bottom:1px solid rgba(215,227,252,0.06);"><span style="color:#bbcabf;font-size:14px;">SMS potvrzení a připomínky</span><span style="font-family:'JetBrains Mono',monospace;font-size:13.5px;color:#46ce8e;white-space:nowrap;">od 8 000 Kč</span></div>
+            <div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding:12px 0;border-bottom:1px solid rgba(215,227,252,0.06);"><span style="color:#bbcabf;font-size:14px;">Další jazyková verze</span><span style="font-family:'JetBrains Mono',monospace;font-size:13.5px;color:#46ce8e;white-space:nowrap;">od 9 000 Kč</span></div>
+            <div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding:12px 0;border-bottom:1px solid rgba(215,227,252,0.06);"><span style="color:#bbcabf;font-size:14px;">Napojení na fakturační systém</span><span style="font-family:'JetBrains Mono',monospace;font-size:13.5px;color:#46ce8e;white-space:nowrap;">od 12 000 Kč</span></div>
+            <div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding:12px 0;border-bottom:1px solid rgba(215,227,252,0.06);"><span style="color:#bbcabf;font-size:14px;">Věrnostní program a slevové kódy</span><span style="font-family:'JetBrains Mono',monospace;font-size:13.5px;color:#46ce8e;white-space:nowrap;">od 14 000 Kč</span></div>
+            <div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding:12px 0;border-bottom:1px solid rgba(215,227,252,0.06);"><span style="color:#bbcabf;font-size:14px;">Statistiky a reporty na míru</span><span style="font-family:'JetBrains Mono',monospace;font-size:13.5px;color:#46ce8e;white-space:nowrap;">od 10 000 Kč</span></div>
+            <div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding:12px 0;border-bottom:1px solid rgba(215,227,252,0.06);"><span style="color:#bbcabf;font-size:14px;">Import dat ze stávajícího systému</span><span style="font-family:'JetBrains Mono',monospace;font-size:13.5px;color:#46ce8e;white-space:nowrap;">od 8 000 Kč</span></div>
+            <div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding:12px 0;"><span style="color:#bbcabf;font-size:14px;">Grafický návrh nad rámec šablony</span><span style="font-family:'JetBrains Mono',monospace;font-size:13.5px;color:#46ce8e;white-space:nowrap;">od 15 000 Kč</span></div>
           </div>
           <div data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#101c2e;border-radius:16px;padding:28px;border:1px solid rgba(215,227,252,0.07);">
             <h3 style="font-family:'Be Vietnam Pro',sans-serif;font-weight:600;font-size:20px;margin:0 0 6px;color:#d7e3fc;">Menší práce a konzultace</h3>
             <p style="color:#86948a;font-size:14px;line-height:1.55;margin:0 0 14px;">Když nejde o celý projekt, ale o pomoc na pár hodin.</p>
-            <div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding:12px 0;border-bottom:1px solid rgba(215,227,252,0.06);"><span style="color:#bbcabf;font-size:14px;">Úvodní konzultace (do 60 minut)</span><span style="font-family:'JetBrains Mono',monospace;font-size:13.5px;color:#4edea3;white-space:nowrap;">zdarma</span></div>
-            <div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding:12px 0;border-bottom:1px solid rgba(215,227,252,0.06);"><span style="color:#bbcabf;font-size:14px;">Další konzultace a technické poradenství</span><span style="font-family:'JetBrains Mono',monospace;font-size:13.5px;color:#4edea3;white-space:nowrap;">1 200 Kč / h</span></div>
-            <div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding:12px 0;border-bottom:1px solid rgba(215,227,252,0.06);"><span style="color:#bbcabf;font-size:14px;">Analýza a sepsání zadání</span><span style="font-family:'JetBrains Mono',monospace;font-size:13.5px;color:#4edea3;white-space:nowrap;">od 12 000 Kč</span></div>
-            <div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding:12px 0;border-bottom:1px solid rgba(215,227,252,0.06);"><span style="color:#bbcabf;font-size:14px;">Programátorská práce nad rámec paušálu</span><span style="font-family:'JetBrains Mono',monospace;font-size:13.5px;color:#4edea3;white-space:nowrap;">950 Kč / h</span></div>
-            <div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding:12px 0;"><span style="color:#bbcabf;font-size:14px;">Expresní zásah do 24 hodin</span><span style="font-family:'JetBrains Mono',monospace;font-size:13.5px;color:#4edea3;white-space:nowrap;">1 400 Kč / h</span></div>
+            <div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding:12px 0;border-bottom:1px solid rgba(215,227,252,0.06);"><span style="color:#bbcabf;font-size:14px;">Úvodní konzultace (do 60 minut)</span><span style="font-family:'JetBrains Mono',monospace;font-size:13.5px;color:#46ce8e;white-space:nowrap;">zdarma</span></div>
+            <div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding:12px 0;border-bottom:1px solid rgba(215,227,252,0.06);"><span style="color:#bbcabf;font-size:14px;">Další konzultace a technické poradenství</span><span style="font-family:'JetBrains Mono',monospace;font-size:13.5px;color:#46ce8e;white-space:nowrap;">1 200 Kč / h</span></div>
+            <div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding:12px 0;border-bottom:1px solid rgba(215,227,252,0.06);"><span style="color:#bbcabf;font-size:14px;">Analýza a sepsání zadání</span><span style="font-family:'JetBrains Mono',monospace;font-size:13.5px;color:#46ce8e;white-space:nowrap;">od 12 000 Kč</span></div>
+            <div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding:12px 0;border-bottom:1px solid rgba(215,227,252,0.06);"><span style="color:#bbcabf;font-size:14px;">Programátorská práce nad rámec paušálu</span><span style="font-family:'JetBrains Mono',monospace;font-size:13.5px;color:#46ce8e;white-space:nowrap;">950 Kč / h</span></div>
+            <div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding:12px 0;"><span style="color:#bbcabf;font-size:14px;">Expresní zásah do 24 hodin</span><span style="font-family:'JetBrains Mono',monospace;font-size:13.5px;color:#46ce8e;white-space:nowrap;">1 400 Kč / h</span></div>
             <p style="color:#86948a;font-size:14px;line-height:1.55;margin:14px 0 0;">Cenu analýzy odečteme z ceny realizace, pokud se pro spolupráci rozhodnete.</p>
           </div>
         </div>
@@ -455,39 +416,39 @@
             <p style="color:#86948a;font-size:14px;line-height:1.55;margin:0;">Systém není hotový spuštěním. Paušál drží aplikaci v chodu, aktualizovanou a zálohovanou.</p>
           </div>
           <div style="display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));">
-            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:14px;padding:24px;border:1px solid rgba(78,222,163,0.1);display:flex;flex-direction:column;gap:14px;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(78,222,163,0.35);box-shadow:0 10px 30px rgba(0,0,0,0.28);">
+            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:16px;padding:24px;border:1px solid rgba(70,206,142,0.1);display:flex;flex-direction:column;gap:14px;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(70,206,142,0.35);box-shadow:0 10px 30px rgba(0,0,0,0.28);">
               <h4 style="font-family:'Be Vietnam Pro',sans-serif;font-size:18px;font-weight:600;margin:0;color:#d7e3fc;">Základ</h4>
-              <div style="display:flex;align-items:baseline;gap:8px;"><span style="font-family:'JetBrains Mono',monospace;font-size:27px;font-weight:600;color:#4edea3;line-height:1;">1 490 Kč</span><span style="color:#86948a;font-size:13px;">měsíčně</span></div>
+              <div style="display:flex;align-items:baseline;gap:8px;"><span style="font-family:'JetBrains Mono',monospace;font-size:27px;font-weight:600;color:#46ce8e;line-height:1;">1 490 Kč</span><span style="color:#86948a;font-size:13px;">měsíčně</span></div>
               <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px;">
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Zálohování dat a obnovení při havárii</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Bezpečnostní aktualizace a záplaty</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Dohled nad provozem a certifikáty</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>E-mailová podpora, reakce do 2 pracovních dnů</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Zálohování dat a obnovení při havárii</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Bezpečnostní aktualizace a záplaty</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Dohled nad provozem a certifikáty</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>E-mailová podpora, reakce do 2 pracovních dnů</span></li>
               </ul>
             </article>
-            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#182b3d;border-radius:14px;padding:24px;border:1px solid rgba(78,222,163,0.32);display:flex;flex-direction:column;gap:14px;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(78,222,163,0.35);box-shadow:0 10px 30px rgba(0,0,0,0.28);">
+            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#182b3d;border-radius:16px;padding:24px;border:1px solid rgba(70,206,142,0.32);display:flex;flex-direction:column;gap:14px;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(70,206,142,0.35);box-shadow:0 10px 30px rgba(0,0,0,0.28);">
               <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
                 <h4 style="font-family:'Be Vietnam Pro',sans-serif;font-size:18px;font-weight:600;margin:0;color:#d7e3fc;">Standard</h4>
-                <span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:#00291c;background:#4edea3;border-radius:999px;padding:4px 10px;">Nejčastější volba</span>
+                <span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:#062314;background:#46ce8e;border-radius:999px;padding:4px 10px;">Nejčastější volba</span>
               </div>
-              <div style="display:flex;align-items:baseline;gap:8px;"><span style="font-family:'JetBrains Mono',monospace;font-size:27px;font-weight:600;color:#4edea3;line-height:1;">3 490 Kč</span><span style="color:#86948a;font-size:13px;">měsíčně</span></div>
+              <div style="display:flex;align-items:baseline;gap:8px;"><span style="font-family:'JetBrains Mono',monospace;font-size:27px;font-weight:600;color:#46ce8e;line-height:1;">3 490 Kč</span><span style="color:#86948a;font-size:13px;">měsíčně</span></div>
               <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px;">
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Vše ze Základu</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Nepřetržité hlídání dostupnosti s upozorněním</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>2 hodiny drobných úprav měsíčně</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Reakce do 1 pracovního dne</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Čtvrtletní zpráva o stavu systému</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Vše ze Základu</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Nepřetržité hlídání dostupnosti s upozorněním</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>2 hodiny drobných úprav měsíčně</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Reakce do 1 pracovního dne</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Čtvrtletní zpráva o stavu systému</span></li>
               </ul>
             </article>
-            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:14px;padding:24px;border:1px solid rgba(78,222,163,0.1);display:flex;flex-direction:column;gap:14px;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(78,222,163,0.35);box-shadow:0 10px 30px rgba(0,0,0,0.28);">
+            <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:16px;padding:24px;border:1px solid rgba(70,206,142,0.1);display:flex;flex-direction:column;gap:14px;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;" style-hover="transform:translateY(-3px);border-color:rgba(70,206,142,0.35);box-shadow:0 10px 30px rgba(0,0,0,0.28);">
               <h4 style="font-family:'Be Vietnam Pro',sans-serif;font-size:18px;font-weight:600;margin:0;color:#d7e3fc;">Rozšířený</h4>
-              <div style="display:flex;align-items:baseline;gap:8px;"><span style="font-family:'JetBrains Mono',monospace;font-size:27px;font-weight:600;color:#4edea3;line-height:1;">7 900 Kč</span><span style="color:#86948a;font-size:13px;">měsíčně</span></div>
+              <div style="display:flex;align-items:baseline;gap:8px;"><span style="font-family:'JetBrains Mono',monospace;font-size:27px;font-weight:600;color:#46ce8e;line-height:1;">7 900 Kč</span><span style="color:#86948a;font-size:13px;">měsíčně</span></div>
               <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px;">
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Vše ze Standardu</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>6 hodin úprav a rozvoje měsíčně</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Reakce do 4 pracovních hodin</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Telefonická podpora přednostně</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#4edea3;margin-top:2px;flex-shrink:0;">check</span><span>Společné plánování dalšího rozvoje</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Vše ze Standardu</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>6 hodin úprav a rozvoje měsíčně</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Reakce do 4 pracovních hodin</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Telefonická podpora přednostně</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.5;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;color:#46ce8e;margin-top:2px;flex-shrink:0;">check</span><span>Společné plánování dalšího rozvoje</span></li>
               </ul>
             </article>
           </div>
@@ -498,14 +459,14 @@
           <p style="color:#86948a;font-size:14px;line-height:1.55;margin:0 0 22px;">Ať víte předem, s čím počítat.</p>
           <div style="display:grid;gap:30px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));">
             <div>
-              <h4 style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;margin:0 0 6px;color:#4edea3;">V ceně je</h4>
+              <h4 style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;margin:0 0 6px;color:#46ce8e;">V ceně je</h4>
               <ul style="list-style:none;margin:0;padding:0;">
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.55;padding:9px 0;border-bottom:1px solid rgba(215,227,252,0.06);"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;margin-top:2px;flex-shrink:0;color:#4edea3;">check</span><span>Úvodní konzultace a analýza zadání</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.55;padding:9px 0;border-bottom:1px solid rgba(215,227,252,0.06);"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;margin-top:2px;flex-shrink:0;color:#4edea3;">check</span><span>Návrh vzhledu a rozvržení obrazovek</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.55;padding:9px 0;border-bottom:1px solid rgba(215,227,252,0.06);"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;margin-top:2px;flex-shrink:0;color:#4edea3;">check</span><span>Vývoj, testování a opravy chyb</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.55;padding:9px 0;border-bottom:1px solid rgba(215,227,252,0.06);"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;margin-top:2px;flex-shrink:0;color:#4edea3;">check</span><span>Nasazení do provozu a předání</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.55;padding:9px 0;border-bottom:1px solid rgba(215,227,252,0.06);"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;margin-top:2px;flex-shrink:0;color:#4edea3;">check</span><span>Zaškolení obsluhy a stručná příručka</span></li>
-                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.55;padding:9px 0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;margin-top:2px;flex-shrink:0;color:#4edea3;">check</span><span>30 dní záruky na odstranění chyb zdarma</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.55;padding:9px 0;border-bottom:1px solid rgba(215,227,252,0.06);"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;margin-top:2px;flex-shrink:0;color:#46ce8e;">check</span><span>Úvodní konzultace a analýza zadání</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.55;padding:9px 0;border-bottom:1px solid rgba(215,227,252,0.06);"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;margin-top:2px;flex-shrink:0;color:#46ce8e;">check</span><span>Návrh vzhledu a rozvržení obrazovek</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.55;padding:9px 0;border-bottom:1px solid rgba(215,227,252,0.06);"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;margin-top:2px;flex-shrink:0;color:#46ce8e;">check</span><span>Vývoj, testování a opravy chyb</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.55;padding:9px 0;border-bottom:1px solid rgba(215,227,252,0.06);"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;margin-top:2px;flex-shrink:0;color:#46ce8e;">check</span><span>Nasazení do provozu a předání</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.55;padding:9px 0;border-bottom:1px solid rgba(215,227,252,0.06);"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;margin-top:2px;flex-shrink:0;color:#46ce8e;">check</span><span>Zaškolení obsluhy a stručná příručka</span></li>
+                <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.55;padding:9px 0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;margin-top:2px;flex-shrink:0;color:#46ce8e;">check</span><span>30 dní záruky na odstranění chyb zdarma</span></li>
               </ul>
             </div>
             <div>
@@ -527,20 +488,21 @@
                 <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.55;padding:9px 0;border-bottom:1px solid rgba(215,227,252,0.06);"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;margin-top:2px;flex-shrink:0;color:#bbcabf;">payments</span><span>Poplatky platební brány dle vašeho sazebníku</span></li>
                 <li style="display:flex;gap:9px;align-items:flex-start;color:#bbcabf;font-size:13.5px;line-height:1.55;padding:9px 0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:15px;margin-top:2px;flex-shrink:0;color:#bbcabf;">payments</span><span>Licence třetích stran, pokud je řešení vyžaduje</span></li>
               </ul>
+              <p style="color:#86948a;font-size:13px;line-height:1.55;margin:14px 0 0;">Se založením domény, hostingu i platební brány vám rádi pomůžeme, není potřeba to řešit sami.</p>
             </div>
           </div>
         </div>
 
-        <div style="background:#2e394d;border-radius:16px;padding:30px;border:1px solid rgba(78,222,163,0.14);display:flex;flex-wrap:wrap;gap:28px;align-items:center;justify-content:space-between;">
+        <div style="background:#2e394d;border-radius:16px;padding:30px;border:1px solid rgba(70,206,142,0.14);display:flex;flex-wrap:wrap;gap:28px;align-items:center;justify-content:space-between;">
           <div style="max-width:560px;">
             <h3 style="font-family:'Be Vietnam Pro',sans-serif;font-weight:600;font-size:20px;margin:0 0 6px;color:#d7e3fc;">Jak probíhá placení</h3>
             <p style="color:#bbcabf;font-size:14.5px;line-height:1.65;margin:0;">Projekt rozdělíme na tři platby: 40 % při podpisu smlouvy, 30 % po odsouhlasení funkční verze a 30 % po předání do provozu. U zakázek do 30 000 Kč fakturujeme polovinu na začátku a polovinu po předání.</p>
           </div>
-          <a href="#kontakt" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:15px 30px;border-radius:999px;background:#10b981;color:#00291c;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:14px;box-shadow:0 0 22px rgba(16,185,129,0.24);" style-hover="background:#4edea3;color:#00291c;">Chci přesnou kalkulaci<span class="material-symbols-outlined" aria-hidden="true" style="font-size:18px;">arrow_forward</span></a>
+          <a href="#kontakt" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:15px 30px;border-radius:999px;background:#1f8455;color:#062314;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:14px;box-shadow:0 0 22px rgba(31,132,85,0.24);" style-hover="background:#46ce8e;color:#062314;">Chci přesnou kalkulaci<span class="material-symbols-outlined" aria-hidden="true" style="font-size:18px;">arrow_forward</span></a>
         </div>
 
         <div style="text-align:center;">
-          <a href="cenik.html" target="_blank" style="display:inline-flex;align-items:center;gap:8px;color:#4edea3;font-family:'JetBrains Mono',monospace;font-size:13px;border:1px solid rgba(78,222,163,0.3);border-radius:999px;padding:9px 18px;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:16px;">download</span>Stáhnout ceník jako PDF</a>
+          <a href="cenik.html" target="_blank" style="display:inline-flex;align-items:center;gap:8px;color:#46ce8e;font-family:'JetBrains Mono',monospace;font-size:13px;border:1px solid rgba(70,206,142,0.3);border-radius:999px;padding:9px 18px;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:16px;">download</span>Stáhnout ceník jako PDF</a>
         </div>
 
       </div>
@@ -549,35 +511,35 @@
     <!-- Process -->
     <section id="proces" style="padding:0 20px;max-width:1280px;margin:0 auto;width:100%;scroll-margin-top:104px;">
       <div data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);text-align:center;max-width:640px;margin:0 auto 56px;">
-        <div style="font-family:'JetBrains Mono',monospace;color:#4edea3;font-size:13px;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:12px;">Proces</div>
+        <div style="font-family:'JetBrains Mono',monospace;color:#46ce8e;font-size:13px;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:12px;">Proces</div>
         <h2 style="font-family:'Be Vietnam Pro',sans-serif;font-weight:600;font-size:clamp(26px,3vw,34px);margin:0 0 14px;">Jak spolupráce probíhá</h2>
         <p style="color:#bbcabf;font-size:16px;margin:0;">Pět kroků od prvního rozhovoru po dlouhodobou podporu.</p>
       </div>
       <div data-cards-grid="true" style="display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(196px,1fr));">
-        <article style="position:relative;padding:20px 16px;background:#142032;border-radius:14px;border:1px solid rgba(78,222,163,0.08);">
-          <div style="font-family:'JetBrains Mono',monospace;color:rgba(78,222,163,0.35);font-size:26px;font-weight:600;margin-bottom:10px;">01</div>
+        <article style="position:relative;padding:20px 16px;background:#142032;border-radius:16px;border:1px solid rgba(70,206,142,0.08);">
+          <div style="font-family:'JetBrains Mono',monospace;color:rgba(70,206,142,0.35);font-size:26px;font-weight:600;margin-bottom:10px;">01</div>
           <h3 style="font-family:'Be Vietnam Pro',sans-serif;font-size:16px;font-weight:600;margin:0 0 6px;color:#d7e3fc;">Konzultace</h3>
-          <p style="color:#bbcabf;font-size:13.5px;line-height:1.55;margin:0;">Probereme váš záměr, cíle a přibližný rozpočet.</p>
+          <p style="color:#bbcabf;font-size:13.5px;line-height:1.55;margin:0;">Nezávazná konzultace do 60 minut, obvykle po telefonu nebo videohovoru.</p>
         </article>
-        <article style="position:relative;padding:20px 16px;background:#142032;border-radius:14px;border:1px solid rgba(78,222,163,0.08);">
-          <div style="font-family:'JetBrains Mono',monospace;color:rgba(78,222,163,0.35);font-size:26px;font-weight:600;margin-bottom:10px;">02</div>
+        <article style="position:relative;padding:20px 16px;background:#142032;border-radius:16px;border:1px solid rgba(70,206,142,0.08);">
+          <div style="font-family:'JetBrains Mono',monospace;color:rgba(70,206,142,0.35);font-size:26px;font-weight:600;margin-bottom:10px;">02</div>
           <h3 style="font-family:'Be Vietnam Pro',sans-serif;font-size:16px;font-weight:600;margin:0 0 6px;color:#d7e3fc;">Návrh řešení</h3>
-          <p style="color:#bbcabf;font-size:13.5px;line-height:1.55;margin:0;">Navrhneme architekturu, rozsah prací a harmonogram.</p>
+          <p style="color:#bbcabf;font-size:13.5px;line-height:1.55;margin:0;">Do tří pracovních dnů dostanete nabídku s rozpočtem a harmonogramem.</p>
         </article>
-        <article style="position:relative;padding:20px 16px;background:#142032;border-radius:14px;border:1px solid rgba(78,222,163,0.08);">
-          <div style="font-family:'JetBrains Mono',monospace;color:rgba(78,222,163,0.35);font-size:26px;font-weight:600;margin-bottom:10px;">03</div>
+        <article style="position:relative;padding:20px 16px;background:#142032;border-radius:16px;border:1px solid rgba(70,206,142,0.08);">
+          <div style="font-family:'JetBrains Mono',monospace;color:rgba(70,206,142,0.35);font-size:26px;font-weight:600;margin-bottom:10px;">03</div>
           <h3 style="font-family:'Be Vietnam Pro',sans-serif;font-size:16px;font-weight:600;margin:0 0 6px;color:#d7e3fc;">Vývoj</h3>
-          <p style="color:#bbcabf;font-size:13.5px;line-height:1.55;margin:0;">Iterativní vývoj s pravidelnými ukázkami postupu.</p>
+          <p style="color:#bbcabf;font-size:13.5px;line-height:1.55;margin:0;">Funkční verzi odsouhlasíte ještě před druhou platbou.</p>
         </article>
-        <article style="position:relative;padding:20px 16px;background:#142032;border-radius:14px;border:1px solid rgba(78,222,163,0.08);">
-          <div style="font-family:'JetBrains Mono',monospace;color:rgba(78,222,163,0.35);font-size:26px;font-weight:600;margin-bottom:10px;">04</div>
+        <article style="position:relative;padding:20px 16px;background:#142032;border-radius:16px;border:1px solid rgba(70,206,142,0.08);">
+          <div style="font-family:'JetBrains Mono',monospace;color:rgba(70,206,142,0.35);font-size:26px;font-weight:600;margin-bottom:10px;">04</div>
           <h3 style="font-family:'Be Vietnam Pro',sans-serif;font-size:16px;font-weight:600;margin:0 0 6px;color:#d7e3fc;">Nasazení</h3>
-          <p style="color:#bbcabf;font-size:13.5px;line-height:1.55;margin:0;">Testování, ladění a spuštění do ostrého provozu.</p>
+          <p style="color:#bbcabf;font-size:13.5px;line-height:1.55;margin:0;">Po spuštění máte 30 dní záruky na bezplatné opravy chyb.</p>
         </article>
-        <article style="position:relative;padding:20px 16px;background:#142032;border-radius:14px;border:1px solid rgba(78,222,163,0.08);">
-          <div style="font-family:'JetBrains Mono',monospace;color:rgba(78,222,163,0.35);font-size:26px;font-weight:600;margin-bottom:10px;">05</div>
+        <article style="position:relative;padding:20px 16px;background:#142032;border-radius:16px;border:1px solid rgba(70,206,142,0.08);">
+          <div style="font-family:'JetBrains Mono',monospace;color:rgba(70,206,142,0.35);font-size:26px;font-weight:600;margin-bottom:10px;">05</div>
           <h3 style="font-family:'Be Vietnam Pro',sans-serif;font-size:16px;font-weight:600;margin:0 0 6px;color:#d7e3fc;">Podpora</h3>
-          <p style="color:#bbcabf;font-size:13.5px;line-height:1.55;margin:0;">Dlouhodobá správa, aktualizace a další rozvoj.</p>
+          <p style="color:#bbcabf;font-size:13.5px;line-height:1.55;margin:0;">Dlouhodobou správu přebíráme za paušál od 1 490 Kč měsíčně.</p>
         </article>
       </div>
     </section>
@@ -585,39 +547,39 @@
     <!-- Projects -->
     <section id="projekty" style="padding:0 20px;max-width:1280px;margin:0 auto;width:100%;scroll-margin-top:104px;">
       <div data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);text-align:center;max-width:680px;margin:0 auto 48px;">
-        <div style="font-family:'JetBrains Mono',monospace;color:#4edea3;font-size:13px;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:12px;">Projekty</div>
+        <div style="font-family:'JetBrains Mono',monospace;color:#46ce8e;font-size:13px;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:12px;">Projekty</div>
         <h2 style="font-family:'Be Vietnam Pro',sans-serif;font-weight:600;font-size:clamp(26px,3vw,34px);margin:0 0 14px;letter-spacing:-0.015em;">Na čem si ověřujeme, co vám doporučujeme</h2>
         <p style="color:#bbcabf;font-size:16px;line-height:1.6;margin:0;">Než něco nabídneme klientovi, provozujeme to sami na vlastní platformě vevit.cz. Případové studie klientských projektů sem doplníme, jakmile je budeme moci zveřejnit.</p>
       </div>
       <div style="display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));">
-        <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:14px;padding:24px;border:1px solid rgba(78,222,163,0.1);display:flex;flex-direction:column;gap:14px;">
-          <div style="width:38px;height:38px;border-radius:10px;background:rgba(78,222,163,0.1);display:flex;align-items:center;justify-content:center;color:#4edea3;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">vpn_key</span></div>
+        <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:16px;padding:24px;border:1px solid rgba(70,206,142,0.1);display:flex;flex-direction:column;gap:14px;">
+          <div style="width:38px;height:38px;border-radius:10px;background:rgba(70,206,142,0.1);display:flex;align-items:center;justify-content:center;color:#46ce8e;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">vpn_key</span></div>
           <h3 style="font-family:'Be Vietnam Pro',sans-serif;font-size:18px;font-weight:600;margin:0;color:#d7e3fc;letter-spacing:-0.01em;">Jednotné přihlášení pro vevit.cz</h3>
           <p style="color:#bbcabf;font-size:14px;line-height:1.6;margin:0;">Jeden účet do všech částí platformy: obchodu, nástrojů i vzdělávací sekce. Bezpečné relace, role a možnost zůstat přihlášený.</p>
           <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:4px;">
-            <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#4edea3;background:rgba(78,222,163,0.08);border:1px solid rgba(78,222,163,0.16);border-radius:999px;padding:4px 10px;">Registrace a přihlášení</span>
-            <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#4edea3;background:rgba(78,222,163,0.08);border:1px solid rgba(78,222,163,0.16);border-radius:999px;padding:4px 10px;">Role a oprávnění</span>
-            <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#4edea3;background:rgba(78,222,163,0.08);border:1px solid rgba(78,222,163,0.16);border-radius:999px;padding:4px 10px;">Bezpečné relace</span>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#46ce8e;background:rgba(70,206,142,0.08);border:1px solid rgba(70,206,142,0.16);border-radius:999px;padding:4px 10px;">Registrace a přihlášení</span>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#46ce8e;background:rgba(70,206,142,0.08);border:1px solid rgba(70,206,142,0.16);border-radius:999px;padding:4px 10px;">Role a oprávnění</span>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#46ce8e;background:rgba(70,206,142,0.08);border:1px solid rgba(70,206,142,0.16);border-radius:999px;padding:4px 10px;">Bezpečné relace</span>
           </div>
         </article>
-        <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:14px;padding:24px;border:1px solid rgba(78,222,163,0.1);display:flex;flex-direction:column;gap:14px;">
-          <div style="width:38px;height:38px;border-radius:10px;background:rgba(78,222,163,0.1);display:flex;align-items:center;justify-content:center;color:#4edea3;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">school</span></div>
+        <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:16px;padding:24px;border:1px solid rgba(70,206,142,0.1);display:flex;flex-direction:column;gap:14px;">
+          <div style="width:38px;height:38px;border-radius:10px;background:rgba(70,206,142,0.1);display:flex;align-items:center;justify-content:center;color:#46ce8e;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">school</span></div>
           <h3 style="font-family:'Be Vietnam Pro',sans-serif;font-size:18px;font-weight:600;margin:0;color:#d7e3fc;letter-spacing:-0.01em;">Vevit Edu: interaktivní kurz</h3>
           <p style="color:#bbcabf;font-size:14px;line-height:1.6;margin:0;">Vzdělávací aplikace s lekcemi, cvičeními a automatickým vyhodnocením. Sleduje pokrok studenta, uděluje body a odznaky.</p>
           <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:4px;">
-            <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#4edea3;background:rgba(78,222,163,0.08);border:1px solid rgba(78,222,163,0.16);border-radius:999px;padding:4px 10px;">Lekce a cvičení</span>
-            <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#4edea3;background:rgba(78,222,163,0.08);border:1px solid rgba(78,222,163,0.16);border-radius:999px;padding:4px 10px;">Vyhodnocení odpovědí</span>
-            <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#4edea3;background:rgba(78,222,163,0.08);border:1px solid rgba(78,222,163,0.16);border-radius:999px;padding:4px 10px;">Sledování pokroku</span>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#46ce8e;background:rgba(70,206,142,0.08);border:1px solid rgba(70,206,142,0.16);border-radius:999px;padding:4px 10px;">Lekce a cvičení</span>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#46ce8e;background:rgba(70,206,142,0.08);border:1px solid rgba(70,206,142,0.16);border-radius:999px;padding:4px 10px;">Vyhodnocení odpovědí</span>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#46ce8e;background:rgba(70,206,142,0.08);border:1px solid rgba(70,206,142,0.16);border-radius:999px;padding:4px 10px;">Sledování pokroku</span>
           </div>
         </article>
-        <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:14px;padding:24px;border:1px solid rgba(78,222,163,0.1);display:flex;flex-direction:column;gap:14px;">
-          <div style="width:38px;height:38px;border-radius:10px;background:rgba(78,222,163,0.1);display:flex;align-items:center;justify-content:center;color:#4edea3;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">graphic_eq</span></div>
+        <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:16px;padding:24px;border:1px solid rgba(70,206,142,0.1);display:flex;flex-direction:column;gap:14px;">
+          <div style="width:38px;height:38px;border-radius:10px;background:rgba(70,206,142,0.1);display:flex;align-items:center;justify-content:center;color:#46ce8e;flex-shrink:0;"><span class="material-symbols-outlined" aria-hidden="true" style="font-size:20px;">graphic_eq</span></div>
           <h3 style="font-family:'Be Vietnam Pro',sans-serif;font-size:18px;font-weight:600;margin:0;color:#d7e3fc;letter-spacing:-0.01em;">Vevit Tools: nástroje v prohlížeči</h3>
           <p style="color:#bbcabf;font-size:14px;line-height:1.6;margin:0;">Sada nástrojů na zpracování audia a videa, které běží přímo v prohlížeči. Soubory se nikam nenahrávají a neopouštějí počítač uživatele.</p>
           <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:4px;">
-            <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#4edea3;background:rgba(78,222,163,0.08);border:1px solid rgba(78,222,163,0.16);border-radius:999px;padding:4px 10px;">Zpracování na klientovi</span>
-            <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#4edea3;background:rgba(78,222,163,0.08);border:1px solid rgba(78,222,163,0.16);border-radius:999px;padding:4px 10px;">Bez nahrávání na server</span>
-            <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#4edea3;background:rgba(78,222,163,0.08);border:1px solid rgba(78,222,163,0.16);border-radius:999px;padding:4px 10px;">Rychlé zpracování</span>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#46ce8e;background:rgba(70,206,142,0.08);border:1px solid rgba(70,206,142,0.16);border-radius:999px;padding:4px 10px;">Zpracování na klientovi</span>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#46ce8e;background:rgba(70,206,142,0.08);border:1px solid rgba(70,206,142,0.16);border-radius:999px;padding:4px 10px;">Bez nahrávání na server</span>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#46ce8e;background:rgba(70,206,142,0.08);border:1px solid rgba(70,206,142,0.16);border-radius:999px;padding:4px 10px;">Rychlé zpracování</span>
           </div>
         </article>
       </div>
@@ -626,20 +588,13 @@
 
     <!-- Promo -->
     <section id="nabidka" style="padding:0 20px;max-width:1280px;margin:0 auto;width:100%;scroll-margin-top:104px;">
-      <aside aria-labelledby="specialni-nabidka-title" data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#2e394d;border-radius:20px;padding:48px;border:1px solid rgba(78,222,163,0.2);position:relative;overflow:hidden;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:32px;box-shadow:0 0 26px rgba(16,185,129,0.14);">
-        <div style="position:absolute;right:0;top:0;width:260px;height:260px;background:rgba(78,222,163,0.1);border-radius:50%;filter:blur(80px);pointer-events:none;"></div>
-        <div style="position:relative;z-index:1;max-width:480px;">
-          <div style="display:inline-block;padding:5px 14px;border-radius:999px;background:rgba(78,222,163,0.1);color:#4edea3;font-family:'JetBrains Mono',monospace;font-size:12px;border:1px solid rgba(78,222,163,0.2);margin-bottom:16px;">Speciální nabídka</div>
+      <aside aria-labelledby="specialni-nabidka-title" data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#2e394d;border-radius:16px;padding:48px;border:1px solid rgba(70,206,142,0.2);position:relative;overflow:hidden;box-shadow:0 0 26px rgba(31,132,85,0.14);">
+        <div style="position:absolute;right:0;top:0;width:260px;height:260px;background:rgba(70,206,142,0.1);border-radius:50%;filter:blur(80px);pointer-events:none;"></div>
+        <div style="position:relative;z-index:1;max-width:600px;">
+          <div style="display:inline-block;padding:5px 14px;border-radius:999px;background:rgba(70,206,142,0.1);color:#46ce8e;font-family:'JetBrains Mono',monospace;font-size:12px;border:1px solid rgba(70,206,142,0.2);margin-bottom:16px;">Speciální nabídka</div>
           <h2 id="specialni-nabidka-title" style="font-family:'Be Vietnam Pro',sans-serif;font-weight:700;font-size:clamp(24px,3vw,32px);margin:0 0 14px;line-height:1.25;">6 měsíců správy zdarma pro nové klienty</h2>
-          <p style="color:#bbcabf;font-size:15px;line-height:1.6;margin:0;">Při podpisu smlouvy na vývoj nového systému získáte půl roku správy v tarifu Standard zdarma: zálohy, aktualizace, hlídání provozu a 2 hodiny úprav měsíčně. Hodnota 20 940 Kč.</p>
-        </div>
-        <div style="position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:22px;background:rgba(20,32,50,0.5);padding:26px;border-radius:14px;border:1px solid rgba(215,227,252,0.08);">
-          <div style="text-align:center;">
-            <span style="display:block;font-family:'Inter',sans-serif;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#bbcabf;margin-bottom:10px;">Zadejte kód při kontaktu</span>
-            <button onClick="{{ copyPromo }}" title="Kliknutím zkopírujete kód" style="cursor:pointer;border:2px dashed #4edea3;color:#4edea3;font-family:'JetBrains Mono',monospace;font-size:19px;font-weight:600;letter-spacing:0.1em;padding:12px 24px;border-radius:10px;background:rgba(78,222,163,0.05);">SOFTWARE</button>
-            <span style="{{ promoHintStyle }}">Kód zkopírován!</span>
-          </div>
-          <a href="#kontakt" style="width:100%;text-align:center;display:inline-flex;align-items:center;justify-content:center;padding:13px 22px;border-radius:999px;background:#10b981;color:#00291c;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:14px;">Získat nabídku</a>
+          <p style="color:#bbcabf;font-size:15px;line-height:1.6;margin:0 0 24px;">Když se mnou podepíšete smlouvu na vývoj nového systému, přidám k němu 6 měsíců správy v tarifu Standard zdarma: zálohy, aktualizace, hlídání provozu a 2 hodiny úprav měsíčně. Stačí při kontaktu zmínit kód SOFTWARE.</p>
+          <a href="#kontakt" style="display:inline-flex;align-items:center;justify-content:center;padding:13px 26px;border-radius:999px;background:#1f8455;color:#062314;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:14px;">Získat nabídku</a>
         </div>
       </aside>
     </section>
@@ -647,48 +602,48 @@
     <!-- FAQ -->
     <section id="faq" style="padding:0 20px;max-width:900px;margin:0 auto;width:100%;scroll-margin-top:104px;">
       <div data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);text-align:center;max-width:640px;margin:0 auto 40px;">
-        <div style="font-family:'JetBrains Mono',monospace;color:#4edea3;font-size:13px;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:12px;">FAQ</div>
+        <div style="font-family:'JetBrains Mono',monospace;color:#46ce8e;font-size:13px;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:12px;">FAQ</div>
         <h2 style="font-family:'Be Vietnam Pro',sans-serif;font-weight:600;font-size:clamp(26px,3vw,34px);margin:0 0 14px;letter-spacing:-0.015em;">Časté dotazy</h2>
         <p style="color:#bbcabf;font-size:16px;line-height:1.6;margin:0;">Odpovědi na to, co se nás klienti ptají nejčastěji ještě před podpisem.</p>
       </div>
       <div style="display:flex;flex-direction:column;gap:12px;">
-        <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:12px;border:1px solid rgba(78,222,163,0.08);overflow:hidden;">
+        <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:16px;border:1px solid rgba(70,206,142,0.08);overflow:hidden;">
           <h3 style="margin:0;"><button aria-controls="faq-answer-0" aria-expanded="{{ faqExpanded0 }}" onClick="{{ faqToggle0 }}" style="width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:20px 24px;display:flex;gap:16px;justify-content:space-between;align-items:center;color:#d7e3fc;font-size:16px;font-weight:600;font-family:'Inter',sans-serif;line-height:1.4;">Kolik stojí vývoj systému na míru?<span class="material-symbols-outlined" aria-hidden="true" style="{{ faqIconStyle0 }}">expand_more</span></button></h3>
           <div id="faq-answer-0" style="{{ faqBodyStyle0 }}"><div style="overflow:hidden;"><p style="margin:0 24px 20px;color:#bbcabf;font-size:15px;line-height:1.65;">Orientační ceny máme přímo na webu v sekci Ceník. Web začíná na 18 000 Kč, objednávkový rezervační systém na 55 000 Kč, systém s výběrem sedadel na 130 000 Kč a ubytovací systém na 160 000 Kč. O konečné částce rozhoduje hlavně počet funkcí a napojení na další systémy.</p></div></div>
         </article>
-        <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:12px;border:1px solid rgba(78,222,163,0.08);overflow:hidden;">
+        <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:16px;border:1px solid rgba(70,206,142,0.08);overflow:hidden;">
           <h3 style="margin:0;"><button aria-controls="faq-answer-1" aria-expanded="{{ faqExpanded1 }}" onClick="{{ faqToggle1 }}" style="width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:20px 24px;display:flex;gap:16px;justify-content:space-between;align-items:center;color:#d7e3fc;font-size:16px;font-weight:600;font-family:'Inter',sans-serif;line-height:1.4;">Jak dlouho trvá vývoj aplikace na míru?<span class="material-symbols-outlined" aria-hidden="true" style="{{ faqIconStyle1 }}">expand_more</span></button></h3>
           <div id="faq-answer-1" style="{{ faqBodyStyle1 }}"><div style="overflow:hidden;"><p style="margin:0 24px 20px;color:#bbcabf;font-size:15px;line-height:1.65;">Podle rozsahu, jednoduchý nástroj dodáme v řádu týdnů, komplexní systém v řádu měsíců. Konkrétní harmonogram s termíny dostanete po úvodní analýze.</p></div></div>
         </article>
-        <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:12px;border:1px solid rgba(78,222,163,0.08);overflow:hidden;">
+        <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:16px;border:1px solid rgba(70,206,142,0.08);overflow:hidden;">
           <h3 style="margin:0;"><button aria-controls="faq-answer-2" aria-expanded="{{ faqExpanded2 }}" onClick="{{ faqToggle2 }}" style="width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:20px 24px;display:flex;gap:16px;justify-content:space-between;align-items:center;color:#d7e3fc;font-size:16px;font-weight:600;font-family:'Inter',sans-serif;line-height:1.4;">Jak probíhá cenová nabídka?<span class="material-symbols-outlined" aria-hidden="true" style="{{ faqIconStyle2 }}">expand_more</span></button></h3>
           <div id="faq-answer-2" style="{{ faqBodyStyle2 }}"><div style="overflow:hidden;"><p style="margin:0 24px 20px;color:#bbcabf;font-size:15px;line-height:1.65;">Po nezávazné konzultaci připravíme nabídku s rozpočtem, rozsahem prací a harmonogramem, obvykle do tří pracovních dnů. Nabídka je zdarma a k ničemu vás nezavazuje.</p></div></div>
         </article>
-        <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:12px;border:1px solid rgba(78,222,163,0.08);overflow:hidden;">
+        <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:16px;border:1px solid rgba(70,206,142,0.08);overflow:hidden;">
           <h3 style="margin:0;"><button aria-controls="faq-answer-3" aria-expanded="{{ faqExpanded3 }}" onClick="{{ faqToggle3 }}" style="width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:20px 24px;display:flex;gap:16px;justify-content:space-between;align-items:center;color:#d7e3fc;font-size:16px;font-weight:600;font-family:'Inter',sans-serif;line-height:1.4;">Jak a kdy se platí?<span class="material-symbols-outlined" aria-hidden="true" style="{{ faqIconStyle3 }}">expand_more</span></button></h3>
           <div id="faq-answer-3" style="{{ faqBodyStyle3 }}"><div style="overflow:hidden;"><p style="margin:0 24px 20px;color:#bbcabf;font-size:15px;line-height:1.65;">Projekt rozdělíme na tři platby: 40 % při podpisu smlouvy, 30 % po odsouhlasení funkční verze a 30 % po předání do provozu. U zakázek do 30 000 Kč fakturujeme polovinu na začátku a polovinu po předání.</p></div></div>
         </article>
-        <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:12px;border:1px solid rgba(78,222,163,0.08);overflow:hidden;">
+        <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:16px;border:1px solid rgba(70,206,142,0.08);overflow:hidden;">
           <h3 style="margin:0;"><button aria-controls="faq-answer-4" aria-expanded="{{ faqExpanded4 }}" onClick="{{ faqToggle4 }}" style="width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:20px 24px;display:flex;gap:16px;justify-content:space-between;align-items:center;color:#d7e3fc;font-size:16px;font-weight:600;font-family:'Inter',sans-serif;line-height:1.4;">Komu patří hotový systém, kód a data?<span class="material-symbols-outlined" aria-hidden="true" style="{{ faqIconStyle4 }}">expand_more</span></button></h3>
           <div id="faq-answer-4" style="{{ faqBodyStyle4 }}"><div style="overflow:hidden;"><p style="margin:0 24px 20px;color:#bbcabf;font-size:15px;line-height:1.65;">Vám. Po uhrazení máte k dispozici zdrojový kód i všechna data a můžete se systémem naložit podle svého, včetně předání jinému dodavateli.</p></div></div>
         </article>
-        <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:12px;border:1px solid rgba(78,222,163,0.08);overflow:hidden;">
+        <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:16px;border:1px solid rgba(70,206,142,0.08);overflow:hidden;">
           <h3 style="margin:0;"><button aria-controls="faq-answer-5" aria-expanded="{{ faqExpanded5 }}" onClick="{{ faqToggle5 }}" style="width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:20px 24px;display:flex;gap:16px;justify-content:space-between;align-items:center;color:#d7e3fc;font-size:16px;font-weight:600;font-family:'Inter',sans-serif;line-height:1.4;">Zajišťujete i provoz a údržbu po spuštění?<span class="material-symbols-outlined" aria-hidden="true" style="{{ faqIconStyle5 }}">expand_more</span></button></h3>
           <div id="faq-answer-5" style="{{ faqBodyStyle5 }}"><div style="overflow:hidden;"><p style="margin:0 24px 20px;color:#bbcabf;font-size:15px;line-height:1.65;">Ano. Nabízíme měsíční paušály od 1 490 Kč, které zahrnují zálohy, bezpečnostní aktualizace a dohled nad provozem. Paušál není povinný, ale bez něj systém časem zastarává.</p></div></div>
         </article>
-        <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:12px;border:1px solid rgba(78,222,163,0.08);overflow:hidden;">
+        <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:16px;border:1px solid rgba(70,206,142,0.08);overflow:hidden;">
           <h3 style="margin:0;"><button aria-controls="faq-answer-6" aria-expanded="{{ faqExpanded6 }}" onClick="{{ faqToggle6 }}" style="width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:20px 24px;display:flex;gap:16px;justify-content:space-between;align-items:center;color:#d7e3fc;font-size:16px;font-weight:600;font-family:'Inter',sans-serif;line-height:1.4;">Co když budu chtít systém později rozšířit?<span class="material-symbols-outlined" aria-hidden="true" style="{{ faqIconStyle6 }}">expand_more</span></button></h3>
           <div id="faq-answer-6" style="{{ faqBodyStyle6 }}"><div style="overflow:hidden;"><p style="margin:0 24px 20px;color:#bbcabf;font-size:15px;line-height:1.65;">Počítáme s tím už při návrhu. Rozšíření řešíme buď v hodinách z paušálu, nebo jako samostatnou etapu s vlastní nabídkou. Nezačínáme kvůli tomu od nuly.</p></div></div>
         </article>
-        <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:12px;border:1px solid rgba(78,222,163,0.08);overflow:hidden;">
+        <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:16px;border:1px solid rgba(70,206,142,0.08);overflow:hidden;">
           <h3 style="margin:0;"><button aria-controls="faq-answer-7" aria-expanded="{{ faqExpanded7 }}" onClick="{{ faqToggle7 }}" style="width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:20px 24px;display:flex;gap:16px;justify-content:space-between;align-items:center;color:#d7e3fc;font-size:16px;font-weight:600;font-family:'Inter',sans-serif;line-height:1.4;">Kdo platí hosting, doménu a SMS?<span class="material-symbols-outlined" aria-hidden="true" style="{{ faqIconStyle7 }}">expand_more</span></button></h3>
           <div id="faq-answer-7" style="{{ faqBodyStyle7 }}"><div style="overflow:hidden;"><p style="margin:0 24px 20px;color:#bbcabf;font-size:15px;line-height:1.65;">Provozní náklady si hradíte přímo u poskytovatele a zůstávají na vaše jméno. Doména vyjde zhruba na 200–400 Kč ročně, hosting na 150–1 500 Kč měsíčně podle zátěže a SMS na jednotky korun za zprávu. Rádi vám je pomůžeme nastavit.</p></div></div>
         </article>
-        <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:12px;border:1px solid rgba(78,222,163,0.08);overflow:hidden;">
+        <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:16px;border:1px solid rgba(70,206,142,0.08);overflow:hidden;">
           <h3 style="margin:0;"><button aria-controls="faq-answer-8" aria-expanded="{{ faqExpanded8 }}" onClick="{{ faqToggle8 }}" style="width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:20px 24px;display:flex;gap:16px;justify-content:space-between;align-items:center;color:#d7e3fc;font-size:16px;font-weight:600;font-family:'Inter',sans-serif;line-height:1.4;">S jakými technologiemi pracujete?<span class="material-symbols-outlined" aria-hidden="true" style="{{ faqIconStyle8 }}">expand_more</span></button></h3>
           <div id="faq-answer-8" style="{{ faqBodyStyle8 }}"><div style="overflow:hidden;"><p style="margin:0 24px 20px;color:#bbcabf;font-size:15px;line-height:1.65;">Volíme je podle potřeb projektu, typicky moderní webové frameworky, spolehlivé hostingové prostředí a osvědčené databáze. Nesázíme na uzavřené platformy, ze kterých se špatně odchází.</p></div></div>
         </article>
-        <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:12px;border:1px solid rgba(78,222,163,0.08);overflow:hidden;">
+        <article data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:16px;border:1px solid rgba(70,206,142,0.08);overflow:hidden;">
           <h3 style="margin:0;"><button aria-controls="faq-answer-9" aria-expanded="{{ faqExpanded9 }}" onClick="{{ faqToggle9 }}" style="width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:20px 24px;display:flex;gap:16px;justify-content:space-between;align-items:center;color:#d7e3fc;font-size:16px;font-weight:600;font-family:'Inter',sans-serif;line-height:1.4;">Podepisujete NDA a jak je to s osobními údaji?<span class="material-symbols-outlined" aria-hidden="true" style="{{ faqIconStyle9 }}">expand_more</span></button></h3>
           <div id="faq-answer-9" style="{{ faqBodyStyle9 }}"><div style="overflow:hidden;"><p style="margin:0 24px 20px;color:#bbcabf;font-size:15px;line-height:1.65;">NDA podepíšeme na vyžádání, důvěrnost vašich dat i nápadů je pro nás standard. Systémy navrhujeme v souladu s GDPR a tento web nepoužívá sledovací cookies.</p></div></div>
         </article>
@@ -705,7 +660,7 @@
           </div>
           <div style="display:flex;flex-direction:column;gap:22px;">
             <div style="display:flex;align-items:flex-start;gap:16px;">
-              <div style="width:40px;height:40px;border-radius:50%;background:#142032;display:flex;align-items:center;justify-content:center;color:#4edea3;flex-shrink:0;border:1px solid rgba(78,222,163,0.1);"><span class="material-symbols-outlined" aria-hidden="true">business</span></div>
+              <div style="width:40px;height:40px;border-radius:50%;background:#142032;display:flex;align-items:center;justify-content:center;color:#46ce8e;flex-shrink:0;border:1px solid rgba(70,206,142,0.1);"><span class="material-symbols-outlined" aria-hidden="true">business</span></div>
               <div>
                 <h3 style="font-family:'JetBrains Mono',monospace;font-size:14px;margin:0 0 4px;color:#d7e3fc;">Studio</h3>
                 <p style="color:#bbcabf;margin:0;font-size:15px;">VeVit Software Studios</p>
@@ -713,21 +668,21 @@
               </div>
             </div>
             <div style="display:flex;align-items:flex-start;gap:16px;">
-              <div style="width:40px;height:40px;border-radius:50%;background:#142032;display:flex;align-items:center;justify-content:center;color:#4edea3;flex-shrink:0;border:1px solid rgba(78,222,163,0.1);"><span class="material-symbols-outlined" aria-hidden="true">call</span></div>
+              <div style="width:40px;height:40px;border-radius:50%;background:#142032;display:flex;align-items:center;justify-content:center;color:#46ce8e;flex-shrink:0;border:1px solid rgba(70,206,142,0.1);"><span class="material-symbols-outlined" aria-hidden="true">call</span></div>
               <div>
                 <h3 style="font-family:'JetBrains Mono',monospace;font-size:14px;margin:0 0 4px;color:#d7e3fc;">Telefon</h3>
                 <a href="tel:+420725589559" onClick="{{ copyPhone }}" style="color:#bbcabf;font-size:15px;">+420 725 589 559</a>
               </div>
             </div>
             <div style="display:flex;align-items:flex-start;gap:16px;">
-              <div style="width:40px;height:40px;border-radius:50%;background:#142032;display:flex;align-items:center;justify-content:center;color:#4edea3;flex-shrink:0;border:1px solid rgba(78,222,163,0.1);"><span class="material-symbols-outlined" aria-hidden="true">mail</span></div>
+              <div style="width:40px;height:40px;border-radius:50%;background:#142032;display:flex;align-items:center;justify-content:center;color:#46ce8e;flex-shrink:0;border:1px solid rgba(70,206,142,0.1);"><span class="material-symbols-outlined" aria-hidden="true">mail</span></div>
               <div>
                 <h3 style="font-family:'JetBrains Mono',monospace;font-size:14px;margin:0 0 4px;color:#d7e3fc;">Email</h3>
                 <a href="mailto:studio@vevit.cz" onClick="{{ copyEmail }}" style="color:#bbcabf;font-size:15px;">studio@vevit.cz</a>
               </div>
             </div>
             <div style="display:flex;align-items:flex-start;gap:16px;">
-              <div style="width:40px;height:40px;border-radius:50%;background:#142032;display:flex;align-items:center;justify-content:center;color:#4edea3;flex-shrink:0;border:1px solid rgba(78,222,163,0.1);"><span class="material-symbols-outlined" aria-hidden="true">location_on</span></div>
+              <div style="width:40px;height:40px;border-radius:50%;background:#142032;display:flex;align-items:center;justify-content:center;color:#46ce8e;flex-shrink:0;border:1px solid rgba(70,206,142,0.1);"><span class="material-symbols-outlined" aria-hidden="true">location_on</span></div>
               <div>
                 <h3 style="font-family:'JetBrains Mono',monospace;font-size:14px;margin:0 0 4px;color:#d7e3fc;">Lokace</h3>
                 <a href="https://www.google.com/maps/search/?api=1&amp;query=Slep%C3%A1+64%2C+250+63+%C4%8Cakovi%C4%8Dky" target="_blank" rel="noopener" onClick="{{ copyAddress }}" style="color:#bbcabf;font-size:15px;">Slepá 64, 250 63 Čakovičky</a>
@@ -735,7 +690,7 @@
             </div>
           </div>
         </address>
-        <div data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:16px;padding:32px;border:1px solid rgba(78,222,163,0.1);position:relative;overflow:hidden;">
+        <div data-reveal="true" style="opacity:0;transform:translateY(16px);transition:opacity .55s cubic-bezier(0.22,1,0.36,1),transform .55s cubic-bezier(0.22,1,0.36,1);background:#142032;border-radius:16px;padding:32px;border:1px solid rgba(70,206,142,0.1);position:relative;overflow:hidden;">
           <sc-if value="{{ hasAlert }}">
             <div style="{{ alertStyle }}">{{ alertMessage }}</div>
           </sc-if>
@@ -795,10 +750,10 @@
               <input id="_honey" name="_honey" type="text" tabindex="-1" autocomplete="off">
             </div>
             <div style="display:flex;gap:12px;align-items:flex-start;">
-              <input id="souhlas" name="souhlas se zpracováním" type="checkbox" required="true" value="ano" style="width:18px;height:18px;margin-top:2px;accent-color:#10b981;flex-shrink:0;">
+              <input id="souhlas" name="souhlas se zpracováním" type="checkbox" required="true" value="ano" style="width:18px;height:18px;margin-top:2px;accent-color:#1f8455;flex-shrink:0;">
               <label for="souhlas" style="color:#bbcabf;font-size:13.5px;line-height:1.55;">Souhlasím se zpracováním údajů za účelem vyřízení poptávky. Podrobnosti v <a href="#" onClick="{{ openPrivacy }}">zásadách ochrany osobních údajů</a>.</label>
             </div>
-            <button type="submit" disabled="{{ submitting }}" style="width:100%;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:16px;border:none;border-radius:999px;background:#10b981;color:#00291c;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:15px;cursor:pointer;">
+            <button type="submit" disabled="{{ submitting }}" style="width:100%;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:16px;border:none;border-radius:999px;background:#1f8455;color:#062314;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:15px;cursor:pointer;">
               {{ submitLabel }}
               <span class="material-symbols-outlined" aria-hidden="true" style="font-size:18px;">send</span>
             </button>
@@ -813,7 +768,7 @@
 
   <!-- Mobilní lišta s poptávkou -->
   <div data-mobile-bar="true" style="{{ mobileBarStyle }}">
-    <a href="#kontakt" style="width:100%;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px;border-radius:999px;background:#10b981;color:#00291c;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:14px;">
+    <a href="#kontakt" style="width:100%;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px;border-radius:999px;background:#1f8455;color:#062314;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:14px;">
       Nezávazná poptávka
       <span class="material-symbols-outlined" aria-hidden="true" style="font-size:18px;">arrow_forward</span>
     </a>
@@ -828,7 +783,7 @@
   <sc-if value="{{ privacyOpen }}">
     <div style="position:fixed;inset:0;z-index:80;display:flex;align-items:center;justify-content:center;padding:16px;">
       <div onClick="{{ closePrivacy }}" style="position:absolute;inset:0;background:rgba(7,19,37,0.8);backdrop-filter:blur(4px);animation:fadeModal 0.2s ease both;"></div>
-      <div role="dialog" aria-modal="true" aria-labelledby="privacy-title" style="position:relative;background:#142032;border-radius:16px;border:1px solid rgba(78,222,163,0.2);box-shadow:0 0 30px rgba(16,185,129,0.15);width:100%;max-width:680px;max-height:85vh;display:flex;flex-direction:column;animation:popIn 0.25s cubic-bezier(0.22,1,0.36,1) both;">
+      <div role="dialog" aria-modal="true" aria-labelledby="privacy-title" style="position:relative;background:#142032;border-radius:16px;border:1px solid rgba(70,206,142,0.2);box-shadow:0 0 30px rgba(31,132,85,0.15);width:100%;max-width:680px;max-height:85vh;display:flex;flex-direction:column;animation:popIn 0.25s cubic-bezier(0.22,1,0.36,1) both;">
         <div style="display:flex;align-items:center;justify-content:space-between;padding:20px 24px;border-bottom:1px solid rgba(215,227,252,0.06);flex-shrink:0;">
           <h3 id="privacy-title" style="font-family:'Be Vietnam Pro',sans-serif;font-size:20px;margin:0;">Ochrana osobních údajů</h3>
           <button onClick="{{ closePrivacy }}" aria-label="Zavřít" style="background:none;border:none;color:#bbcabf;cursor:pointer;"><span class="material-symbols-outlined" aria-hidden="true">close</span></button>
@@ -857,7 +812,7 @@
   <footer style="margin-top:100px;background:#030e20;border-top:1px solid rgba(215,227,252,0.06);">
     <div data-footer-inner="true" style="max-width:1280px;margin:0 auto;padding:48px 20px;display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:28px;">
       <div style="max-width:320px;">
-        <p style="display:flex;align-items:center;gap:10px;font-family:'Be Vietnam Pro',sans-serif;font-weight:700;font-size:18px;color:#4edea3;margin:0 0 10px;">
+        <p style="display:flex;align-items:center;gap:10px;font-family:'Be Vietnam Pro',sans-serif;font-weight:700;font-size:18px;color:#46ce8e;margin:0 0 10px;">
           <img src="logo-mark.png" alt="" width="22" height="22" style="width:22px;height:22px;display:block;">
           VeVit Software Studios
         </p>
@@ -868,7 +823,6 @@
       </div>
       <nav aria-label="Navigace v zápatí">
         <ul style="display:flex;flex-direction:column;gap:10px;list-style:none;margin:0;padding:0;">
-          <li><a href="#sluzby" style="color:#bbcabf;font-size:13px;">Služby</a></li>
           <li><a href="#cenik" style="color:#bbcabf;font-size:13px;">Ceník</a></li>
           <li><a href="#proces" style="color:#bbcabf;font-size:13px;">Proces</a></li>
           <li><a href="#projekty" style="color:#bbcabf;font-size:13px;">Projekty</a></li>
@@ -895,7 +849,6 @@ class Component extends DCLogic {
   state = {
     menuOpen: false,
     showBackToTop: false,
-    promoHint: false,
     toastVisible: false,
     toastMsg: '',
     faqOpen: new Array(10).fill(false),
@@ -979,7 +932,6 @@ class Component extends DCLogic {
     if (this.onResize) window.removeEventListener('resize', this.onResize);
     if (this._raf) cancelAnimationFrame(this._raf);
     clearTimeout(this._toastTimer);
-    clearTimeout(this._promoTimer);
     clearTimeout(this._bindTimer);
     clearTimeout(this._bindTimer2);
   }
@@ -1004,14 +956,6 @@ class Component extends DCLogic {
     this.setState({ toastVisible: true, toastMsg: msg });
     clearTimeout(this._toastTimer);
     this._toastTimer = setTimeout(() => this.setState({ toastVisible: false }), 1800);
-  };
-
-  copyPromo = async () => {
-    const ok = await this.copyToClipboard('SOFTWARE');
-    this.setState({ promoHint: true });
-    clearTimeout(this._promoTimer);
-    this._promoTimer = setTimeout(() => this.setState({ promoHint: false }), 2200);
-    if (!ok) this.showToast('Kopírování selhalo');
   };
 
   copyContact = (e, value) => {
@@ -1084,7 +1028,7 @@ class Component extends DCLogic {
         mobileBarStyle: {
           position: 'fixed', left: 0, right: 0, bottom: 0, zIndex: 60, display: 'none',
           padding: '10px 16px', background: 'rgba(7,19,37,0.94)', backdropFilter: 'blur(14px)', WebkitBackdropFilter: 'blur(14px)',
-          borderTop: '1px solid rgba(78,222,163,0.15)', opacity: 1, pointerEvents: 'auto'
+          borderTop: '1px solid rgba(70,206,142,0.15)', opacity: 1, pointerEvents: 'auto'
         }
       };
     }
@@ -1128,7 +1072,7 @@ class Component extends DCLogic {
       screenStyle: {
         width: '100%', height: '100%', borderRadius: 'clamp(4px,0.7vw,9px)', background: '#08131f',
         overflow: 'hidden', display: 'flex', flexDirection: 'column', opacity: screenOn,
-        boxShadow: `inset 0 0 60px rgba(78,222,163,${(0.08 * screenOn).toFixed(3)})`
+        boxShadow: `inset 0 0 60px rgba(70,206,142,${(0.08 * screenOn).toFixed(3)})`
       },
       deckStyle: {
         width: '100%', height: 'clamp(11px,1.8vw,17px)', borderRadius: '0 0 clamp(7px,1.2vw,13px) clamp(7px,1.2vw,13px)',
@@ -1148,7 +1092,7 @@ class Component extends DCLogic {
       mobileBarStyle: {
         position: 'fixed', left: 0, right: 0, bottom: 0, zIndex: 60, display: 'none',
         padding: '10px 16px', background: 'rgba(7,19,37,0.94)', backdropFilter: 'blur(14px)', WebkitBackdropFilter: 'blur(14px)',
-        borderTop: '1px solid rgba(78,222,163,0.15)',
+        borderTop: '1px solid rgba(70,206,142,0.15)',
         opacity: navReveal, pointerEvents: navReveal < 0.5 ? 'none' : 'auto'
       }
     };
@@ -1164,7 +1108,7 @@ class Component extends DCLogic {
     const faqIconStyle = (i) => ({
       transition: 'transform 0.25s ease',
       transform: this.state.faqOpen[i] ? 'rotate(180deg)' : 'rotate(0deg)',
-      color: '#4edea3',
+      color: '#46ce8e',
       flexShrink: 0
     });
     const faqVals = {};
@@ -1178,6 +1122,7 @@ class Component extends DCLogic {
     return {
       ...faqVals,
       ...intro,
+      showIntro: this.props.showIntro ?? true,
       menuOpen: this.state.menuOpen,
       menuExpanded: this.state.menuOpen ? 'true' : 'false',
       menuIcon: this.state.menuOpen ? 'close' : 'menu',
@@ -1187,16 +1132,10 @@ class Component extends DCLogic {
         position: 'fixed', top: 0, left: 0, width: '100%', zIndex: 50,
         background: 'rgba(7,19,37,0.72)', backdropFilter: 'blur(24px)',
         WebkitBackdropFilter: 'blur(24px)',
-        borderBottom: '1px solid rgba(78,222,163,0.08)',
+        borderBottom: '1px solid rgba(70,206,142,0.08)',
         opacity: intro.navReveal,
         pointerEvents: intro.navReveal < 0.5 ? 'none' : 'auto',
         transform: `translateY(${((1 - intro.navReveal) * -14).toFixed(1)}px)`
-      },
-
-      copyPromo: this.copyPromo,
-      promoHintStyle: {
-        display: 'block', fontFamily: "'Inter', sans-serif", fontSize: '12px', color: '#62dcad', marginTop: '8px',
-        opacity: this.state.promoHint ? 1 : 0, transition: 'opacity 0.25s ease'
       },
 
       copyPhone: this.copyPhone, copyEmail: this.copyEmail, copyAddress: this.copyAddress,
@@ -1209,9 +1148,9 @@ class Component extends DCLogic {
       alertStyle: {
         padding: '12px 16px', borderRadius: '10px', fontFamily: "'JetBrains Mono', monospace",
         fontSize: '13px', lineHeight: 1.5, marginBottom: '20px',
-        background: this.state.alertType === 'success' ? 'rgba(16,185,129,0.15)' : 'rgba(255,99,99,0.15)',
-        border: `1px solid ${this.state.alertType === 'success' ? '#4edea3' : '#ff6363'}`,
-        color: this.state.alertType === 'success' ? '#80f9c8' : '#ff9999'
+        background: this.state.alertType === 'success' ? 'rgba(31,132,85,0.15)' : 'rgba(255,99,99,0.15)',
+        border: `1px solid ${this.state.alertType === 'success' ? '#46ce8e' : '#ff6363'}`,
+        color: this.state.alertType === 'success' ? '#76e5aa' : '#ff9999'
       },
 
       openPrivacy: this.openPrivacy, closePrivacy: this.closePrivacy, privacyOpen: this.state.privacyOpen,
@@ -1222,14 +1161,14 @@ class Component extends DCLogic {
       toastMsg: this.state.toastMsg,
       toastStyle: {
         position: 'fixed', bottom: '24px', left: '50%', transform: `translateX(-50%) translateY(${this.state.toastVisible ? '0' : '16px'})`,
-        zIndex: 70, background: '#1f2a3d', color: '#4edea3', border: '1px solid rgba(78,222,163,0.3)',
+        zIndex: 70, background: '#1f2a3d', color: '#46ce8e', border: '1px solid rgba(70,206,142,0.3)',
         borderRadius: '999px', padding: '10px 20px', fontFamily: "'JetBrains Mono', monospace", fontSize: '12px',
-        opacity: this.state.toastVisible ? 1 : 0, pointerEvents: 'none', transition: 'all 0.3s ease', boxShadow: '0 0 20px rgba(16,185,129,0.15)'
+        opacity: this.state.toastVisible ? 1 : 0, pointerEvents: 'none', transition: 'all 0.3s ease', boxShadow: '0 0 20px rgba(31,132,85,0.15)'
       },
       backToTopStyle: {
         position: 'fixed', bottom: '24px', right: '24px', zIndex: 50, width: '48px', height: '48px', borderRadius: '50%',
-        background: '#10b981', color: '#00291c', display: 'flex', alignItems: 'center', justifyContent: 'center', border: 'none', cursor: 'pointer',
-        boxShadow: '0 0 20px rgba(16,185,129,0.25)', opacity: this.state.showBackToTop ? 1 : 0,
+        background: '#1f8455', color: '#062314', display: 'flex', alignItems: 'center', justifyContent: 'center', border: 'none', cursor: 'pointer',
+        boxShadow: '0 0 20px rgba(31,132,85,0.25)', opacity: this.state.showBackToTop ? 1 : 0,
         transform: `translateY(${this.state.showBackToTop ? '0' : '16px'})`, pointerEvents: this.state.showBackToTop ? 'auto' : 'none',
         transition: 'all 0.3s ease'
       }
