@@ -1,0 +1,8 @@
+{
+  "name": "vevit-software-studios-web",
+  "private": true,
+  "version": "1.0.0",
+  "dependencies": {
+    "resend": "^4.0.1"
+  }
+}
